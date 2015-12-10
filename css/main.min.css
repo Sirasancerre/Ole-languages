@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@font-face {
+  font-family: Kavoon-regular;
+  src: local("Kavoon"), url(/fonts/Kavoon-Regular.ttf);
+}
+h1 {
+  font-family: "Kavoon-regular";
+  font-size: 55px;
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+}
+.slogan {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 1px 1px #000;
+  letter-spacing: -0.7px;
+}
+h2 {
+  font-family: "Kavoon-regular";
+  font-size: 30px;
+  color: #696C6F;
+  line-height: 38px;
+}
+h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #696C6F;
+  line-height: 35px;
+}
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #696C6F;
+  line-height: 26px;
+}
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+}
