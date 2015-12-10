@@ -4,12 +4,18 @@
   src: local("Kavoon"),
        url(/fonts/Kavoon-Regular.ttf);
 }
-
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+}
 h1 {
     font-family: "Kavoon-regular";
     font-size: 55px;
     color: #fff;
     text-shadow: 0 1px 1px #000;
+    line-height: 134px;
 }
 .slogan {
     font-family: 'Open Sans', sans-serif;
@@ -18,12 +24,14 @@ h1 {
     color: #fff;
     text-shadow: 0 1px 1px #000;
     letter-spacing: -0.7px;
+    line-height: 38px;
 }
 h2 {
     font-family: "Kavoon-regular";
     font-size: 30px;
     color: #696C6F;
     line-height: 38px;
+    line-height: 100px;
 }
 h3 {
     font-family: 'Open Sans', sans-serif;
@@ -45,4 +53,54 @@ h5 {
     font-size: 18px;
     color: #fff;
     line-height: 24px;
+}
+button {
+    &.red {
+        width: 257px;
+        height: 49px;
+        font-size: 18px;
+        background: #FF5A5F;
+        border-radius: 2px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 2px solid #E30010;
+        color: #FFF;
+        cursor: pointer;
+        &:hover {
+            background: #FF7D80;
+        }
+    }
+    &.white {
+        width: 231px;
+        height: 48px;
+        font-size: 18px;
+        background: #fff;
+        border-radius: 2px;
+        border: 1px solid #D8D8D8;
+        color: #696C6F;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid #aaa;
+        }
+    }
+}
+
+// ================= Navbar ====================
+.navbar-theme {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    background-color: #696C6F;
+    opacity: 0.78;
+    border-radius: 0;
+    .navbar-nav {
+        li {
+            a {
+                color: #fff;
+                &:hover, &:focus {
+                    background-color: #4A4A4A;
+                }
+            }
+        }
+    }
 }
