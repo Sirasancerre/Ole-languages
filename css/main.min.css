@@ -171,4 +171,53 @@ button.white:hover {
   height: 4000px;
   margin-top: 120px;
   padding: 50px;
+  box-shadow: 0px 1px 2px 0px #ACAAAA;
+}
+.wrapper {
+  background: #F5F5F5;
+}
+.first {
+  height: 530px;
+}
+.courses {
+  margin: 0;
+}
+.courses .fr .content,
+.courses .sc .content,
+.courses .th .content,
+.courses .fo .content {
+  height: 287px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.courses .fr .content h3,
+.courses .sc .content h3,
+.courses .th .content h3,
+.courses .fo .content h3,
+.courses .fr .content h4,
+.courses .sc .content h4,
+.courses .th .content h4,
+.courses .fo .content h4 {
+  background: #fff;
+  display: inline;
+}
+.courses .fr .content .inline-h,
+.courses .sc .content .inline-h,
+.courses .th .content .inline-h,
+.courses .fo .content .inline-h {
+  margin-top: 10px;
+  margin-bottom: 10p;
+}
+.courses .fr div {
+  background-image: url(/img/Intensive-spanish-course.png);
+}
+.courses .sc div {
+  background-image: url(/img/semi-intensive-course.png);
+}
+.courses .th div {
+  background-image: url(/img/evening-spanish-course.png);
+}
+.courses .fo div {
+  background-image: url(/img/dele-preparation-course.png);
 }
