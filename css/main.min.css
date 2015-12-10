@@ -85,9 +85,19 @@ button.white:hover {
 .navbar-theme {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
+  font-weight: 700;
   background-color: #696C6F;
   opacity: 0.78;
   border-radius: 0;
+}
+.navbar-theme .navbar-toggle {
+  border-color: #696C6F;
+}
+.navbar-theme .container-fluid {
+  padding: 0;
+}
+.navbar-theme .container-fluid .navbar-collapse {
+  padding: 0;
 }
 .navbar-theme .navbar-nav li a {
   color: #fff;
@@ -95,4 +105,70 @@ button.white:hover {
 .navbar-theme .navbar-nav li a:hover,
 .navbar-theme .navbar-nav li a:focus {
   background-color: #4A4A4A;
+}
+.help-chat {
+  position: fixed;
+  right: 10px;
+  top: 40%;
+}
+.help-chat .bocadilo {
+  position: absolute;
+  background: #FFFFFF;
+  border: 2px solid #E8E8E8;
+  border-radius: 6px;
+  width: 175px;
+  height: 45px;
+  display: inline-block;
+  padding-top: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #696C6F;
+  right: 65px;
+  top: 3px;
+}
+.help-chat .bocadilo:after {
+  content: " ";
+  position: absolute;
+  border: 8px solid transparent;
+  border-left: 8px solid #fff;
+  right: -16px;
+  top: 12px;
+}
+.help-chat .bocadilo:before {
+  content: " ";
+  position: absolute;
+  border: 8px solid transparent;
+  border-left: 8px solid #E8E8E8;
+  right: -18px;
+  top: 12px;
+}
+.help-chat .chat-icon {
+  background: url(/img/bocadillo.png) #ff5a5f no-repeat center;
+  border: 1px solid #000000;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .help-chat .bocadilo {
+    display: none;
+  }
+}
+.park-guell {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  background-image: url(/img/park-guell_dif.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  background: #fff;
+  height: 4000px;
+  margin-top: 120px;
+  padding: 50px;
 }
