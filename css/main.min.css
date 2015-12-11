@@ -53,7 +53,13 @@ h5 {
   color: #fff;
   line-height: 24px;
 }
-button.red {
+a.button {
+  padding-top: 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+a.button.red {
   width: 257px;
   height: 49px;
   font-size: 18px;
@@ -66,10 +72,10 @@ button.red {
   color: #FFF;
   cursor: pointer;
 }
-button.red:hover {
+a.button.red:hover {
   background: #FF7D80;
 }
-button.white {
+a.button.white {
   width: 231px;
   height: 48px;
   font-size: 18px;
@@ -79,7 +85,7 @@ button.white {
   color: #696C6F;
   cursor: pointer;
 }
-button.white:hover {
+a.button.white:hover {
   border: 1px solid #aaa;
 }
 .navbar-theme {
@@ -155,6 +161,9 @@ button.white:hover {
     display: none;
   }
 }
+.row {
+  margin: 60px 0;
+}
 .park-guell {
   z-index: -1;
   width: 100%;
@@ -179,8 +188,11 @@ button.white:hover {
 .first {
   height: 530px;
 }
-.courses {
-  margin: 0;
+.courses .fr,
+.courses .sc,
+.courses .th,
+.courses .fo {
+  padding: 0;
 }
 .courses .fr .content,
 .courses .sc .content,
@@ -190,6 +202,7 @@ button.white:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 15px;
 }
 .courses .fr .content h3,
 .courses .sc .content h3,
@@ -201,23 +214,132 @@ button.white:hover {
 .courses .fo .content h4 {
   background: #fff;
   display: inline;
+  line-height: 34px;
 }
 .courses .fr .content .inline-h,
 .courses .sc .content .inline-h,
 .courses .th .content .inline-h,
 .courses .fo .content .inline-h {
-  margin-top: 10px;
-  margin-bottom: 10p;
+  padding-top: 100px;
 }
-.courses .fr div {
+.courses .fr .content {
   background-image: url(/img/Intensive-spanish-course.png);
 }
-.courses .sc div {
+.courses .sc .content {
   background-image: url(/img/semi-intensive-course.png);
 }
-.courses .th div {
+.courses .th .content {
   background-image: url(/img/evening-spanish-course.png);
 }
-.courses .fo div {
+.courses .fo .content {
   background-image: url(/img/dele-preparation-course.png);
+}
+.accomodations .fr,
+.accomodations .sc,
+.accomodations .th {
+  padding: 0;
+}
+.accomodations .fr .content,
+.accomodations .sc .content,
+.accomodations .th .content {
+  height: 295px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px;
+}
+.accomodations .fr .content h3,
+.accomodations .sc .content h3,
+.accomodations .th .content h3 {
+  background: #fff;
+  display: inline;
+  line-height: 34px;
+}
+.accomodations .fr .content {
+  background-image: url(/img/student.png);
+}
+.accomodations .sc .content {
+  background-image: url(/img/host-family.png);
+}
+.accomodations .th .content {
+  background-image: url(/img/residenca.png);
+}
+.steps {
+  background: #F96B6F;
+}
+.steps p,
+.steps h2,
+.steps h5 {
+  color: #fff!important;
+}
+.steps:after,
+.steps:before {
+  content: " ";
+  width: 44px;
+  height: 44px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 22px;
+  position: relative;
+}
+.steps:before {
+  background: #F5F5F5;
+  top: -22px;
+}
+.steps:after {
+  background: #F96B6F;
+  bottom: -22px;
+}
+.steps .round {
+  width: 160px;
+  height: 160px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 4px solid #FDF8FF;
+  border-radius: 80px;
+}
+.steps .round .step-1,
+.steps .round .step-2,
+.steps .round .step-3 {
+  width: 115px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  right: 0;
+  margin: 30px auto;
+}
+.steps .round .step-1:before,
+.steps .round .step-2:before,
+.steps .round .step-3:before {
+  display: block;
+  padding-top: 9px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  color: #F96B6F;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.steps .round .step-1 {
+  background-image: url(/img/step-1.png);
+}
+.steps .round .step-1:before {
+  content: "1";
+}
+.steps .round .step-2 {
+  background-image: url(/img/step-2.png);
+}
+.steps .round .step-2:before {
+  content: "2";
+}
+.steps .round .step-3 {
+  background-image: url(/img/step-3.png);
+}
+.steps .round .step-3:before {
+  content: "3";
 }
