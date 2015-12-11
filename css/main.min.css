@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 @font-face {
   font-family: Kavoon-regular;
   src: local("Kavoon"), url(/fonts/Kavoon-Regular.ttf);
@@ -53,7 +53,17 @@ h5 {
   color: #fff;
   line-height: 24px;
 }
-button.red {
+a.button {
+  padding-top: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+}
+a.button.red {
   width: 257px;
   height: 49px;
   font-size: 18px;
@@ -66,10 +76,10 @@ button.red {
   color: #FFF;
   cursor: pointer;
 }
-button.red:hover {
+a.button.red:hover {
   background: #FF7D80;
 }
-button.white {
+a.button.white {
   width: 231px;
   height: 48px;
   font-size: 18px;
@@ -79,7 +89,7 @@ button.white {
   color: #696C6F;
   cursor: pointer;
 }
-button.white:hover {
+a.button.white:hover {
   border: 1px solid #aaa;
 }
 .navbar-theme {
@@ -150,10 +160,8 @@ button.white:hover {
   border-radius: 25px;
   display: inline-block;
 }
-@media screen and (max-width: 767px) {
-  .help-chat .bocadilo {
-    display: none;
-  }
+.row {
+  margin: 50px 0;
 }
 .park-guell {
   z-index: -1;
@@ -161,14 +169,289 @@ button.white:hover {
   height: 100%;
   top: 0;
   position: absolute;
-  background-image: url(/img/park-guell_dif.png);
+  background-image: url(../img/park-guell_dif.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .container {
   background: #fff;
-  height: 4000px;
   margin-top: 120px;
   padding: 50px;
+  box-shadow: 0px 1px 2px 0px #ACAAAA;
+}
+.wrapper {
+  background: #F5F5F5;
+}
+.first {
+  height: 530px;
+}
+.courses .fr,
+.courses .sc,
+.courses .th,
+.courses .fo {
+  padding: 0;
+}
+.courses .fr .content,
+.courses .sc .content,
+.courses .th .content,
+.courses .fo .content {
+  height: 287px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px;
+}
+.courses .fr .content h3,
+.courses .sc .content h3,
+.courses .th .content h3,
+.courses .fo .content h3,
+.courses .fr .content h4,
+.courses .sc .content h4,
+.courses .th .content h4,
+.courses .fo .content h4 {
+  background: #fff;
+  display: inline;
+  line-height: 34px;
+}
+.courses .fr .content .inline-h,
+.courses .sc .content .inline-h,
+.courses .th .content .inline-h,
+.courses .fo .content .inline-h {
+  padding-top: 100px;
+}
+.courses .fr .content {
+  background-image: url(../img/Intensive-spanish-course.png);
+}
+.courses .sc .content {
+  background-image: url(../img/semi-intensive-course.png);
+}
+.courses .th .content {
+  background-image: url(../img/evening-spanish-course.png);
+}
+.courses .fo .content {
+  background-image: url(../img/dele-preparation-course.png);
+}
+.accomodations .fr,
+.accomodations .sc,
+.accomodations .th {
+  padding: 0;
+}
+.accomodations .fr .content,
+.accomodations .sc .content,
+.accomodations .th .content {
+  height: 295px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px;
+  padding-top: 122px;
+}
+.accomodations .fr .content h3,
+.accomodations .sc .content h3,
+.accomodations .th .content h3 {
+  background: #fff;
+  display: inline;
+  line-height: 34px;
+}
+.accomodations .fr .content {
+  background-image: url(../img/student.png);
+}
+.accomodations .sc .content {
+  background-image: url(../img/host-family.png);
+}
+.accomodations .th .content {
+  background-image: url(../img/residenca.png);
+}
+.steps {
+  background: #F96B6F;
+}
+.steps p,
+.steps h2,
+.steps h5 {
+  color: #fff!important;
+}
+.steps:after,
+.steps:before {
+  content: " ";
+  width: 44px;
+  height: 44px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 22px;
+  position: relative;
+}
+.steps:before {
+  background: #F5F5F5;
+  top: -26px;
+}
+.steps:after {
+  background: #F96B6F;
+  bottom: -18px;
+}
+.steps .round {
+  width: 160px;
+  height: 160px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 4px solid #FDF8FF;
+  border-radius: 80px;
+}
+.steps .round .step-1,
+.steps .round .step-2,
+.steps .round .step-3 {
+  width: 115px;
+  height: 90px;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  right: 0;
+  margin: 30px auto;
+}
+.steps .round .step-1:before,
+.steps .round .step-2:before,
+.steps .round .step-3:before {
+  display: block;
+  padding-top: 9px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #fff;
+  color: #F96B6F;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+}
+.steps .round .step-1 {
+  background-image: url(../img/step-1.png);
+}
+.steps .round .step-1:before {
+  content: "1";
+}
+.steps .round .step-2 {
+  background-image: url(../img/step-2.png);
+}
+.steps .round .step-2:before {
+  content: "2";
+}
+.steps .round .step-3 {
+  background-image: url(../img/step-3.png);
+}
+.steps .round .step-3:before {
+  content: "3";
+}
+.step-item {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.step-item img {
+  position: absolute;
+  right: -8%;
+  top: 50px;
+}
+.bg-intensive {
+  background: #FFFFFF;
+  border: 1px solid #EEEBEF;
+  box-shadow: 0px 1px 1px 0px #BCBCBD;
+  border-radius: 2px;
+  padding: 20px;
+  color: #696C6F;
+  text-align: left;
+  position: relative;
+}
+.bg-intensive .row {
+  margin: 0;
+}
+.bg-intensive .city,
+.bg-intensive .age {
+  font-weight: 300;
+  margin: 0;
+}
+.bg-intensive .name {
+  font-weight: 700;
+  margin: 0;
+  float: left;
+}
+.bg-intensive .data {
+  font-weight: 300;
+  margin: 0;
+  float: right;
+}
+.triangle {
+  width: 36px;
+  height: 24px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  margin-top: -1px;
+}
+.triangle div {
+  background: #fff;
+  border: 1px solid #EEEBEF;
+  width: 24px;
+  height: 24px;
+  box-shadow: 1px 1px 1px 0px #BCBCBD;
+  transform: rotate(45deg);
+  left: 0;
+  right: 0;
+  margin-top: -12px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonials .foto {
+  width: 130px;
+  height: 130px;
+  box-shadow: 1px 1px 1px 0px #D8D2D2;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  margin: 12px auto 24px;
+}
+footer {
+  background: #2B2D2E;
+  color: #fff;
+}
+footer a {
+  color: #fff;
+}
+@media all and (max-width: 991px) {
+  .step-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .step-item img {
+    display: none;
+  }
+}
+@media all and (max-width: 1199px) {
+  .accomodations .th {
+    display: none;
+  }
+}
+@media all and (min-width: 635px) {
+  .col-sm-4 {
+    width: 33.33333333%;
+    float: left;
+  }
+  /*
+    .col-sm-6 {
+        width: 50%;
+        float: left;
+    }
+    */
+}
+@media all and (max-width: 767px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .help-chat .bocadilo {
+    display: none;
+  }
 }

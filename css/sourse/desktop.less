@@ -1,17 +1,218 @@
+.row {
+    margin: 50px 0;
+}
 .park-guell {
     z-index: -1;
     width: 100%;
     height: 100%;
     top: 0;
     position: absolute;
-    background-image: url(/img/park-guell_dif.png);
+    background-image: url(../img/park-guell_dif.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 .container {
     background: #fff;
-    height: 4000px;
     margin-top: 120px;
     padding: 50px;
+    box-shadow: 0px 1px 2px 0px #ACAAAA;
+}
+.wrapper {
+    background: #F5F5F5;
+}
+.first {
+    height: 530px
+}
+.courses {
+    .fr,.sc,.th,.fo {
+        padding: 0;
+        .content {
+            height: 287px;
+            background-position:  center;
+            background-repeat:  no-repeat;
+            background-size: cover;
+            margin: 15px;
+            h3, h4 {
+                background: #fff;
+                display: inline;
+                line-height: 34px;
+            }
+            .inline-h {
+                padding-top: 100px;
+            }
+        }
+    }
+    .fr .content {background-image: url(../img/Intensive-spanish-course.png)}
+    .sc .content {background-image: url(../img/semi-intensive-course.png)}
+    .th .content {background-image: url(../img/evening-spanish-course.png)}
+    .fo .content {background-image: url(../img/dele-preparation-course.png)}
+}
+.accomodations {
+    .fr,.sc,.th {
+        padding: 0;
+        .content {
+            height: 295px;
+            background-position:  center;
+            background-repeat:  no-repeat;
+            background-size: cover;
+            margin: 15px;
+            padding-top: 122px;
+            h3 {
+                background: #fff;
+                display: inline;
+                line-height: 34px;
+            }
+        }
+    }
+    .fr .content {background-image: url(../img/student.png)}
+    .sc .content {background-image: url(../img/host-family.png)}
+    .th .content {background-image: url(../img/residenca.png)}   
+}
+//@media 1099
+.steps {
+    background: #F96B6F;
+    
+    p, h2, h5 {
+        color: #fff!important;
+    }
+    &:after, &:before {
+        content: " ";
+        width: 44px;
+        height: 44px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 22px;
+        position: relative;
+    }
+    &:before {
+        background: #F5F5F5;
+        top: -26px;
+    }
+    &:after {
+        background: #F96B6F;
+        bottom: -18px;
+    }
+    .round {
+        width: 160px;
+        height: 160px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border: 4px solid #FDF8FF;
+        border-radius: 80px;
+        .step-1, .step-2, .step-3 {
+            width: 115px;
+            height: 90px;
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0;
+            right: 0;
+            margin: 30px auto;
+            &:before {
+                display: block;
+                padding-top: 9px;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: #fff;
+                color: #F96B6F;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 700;
+                font-size: 22px;
+            }
+        }
+        .step-1 {
+            background-image: url(../img/step-1.png);
+            &:before {content: "1";}
+        }
+        .step-2 {
+            background-image: url(../img/step-2.png);
+            &:before {content: "2";}
+        }
+        .step-3 {
+            background-image: url(../img/step-3.png);
+            &:before {content: "3";}
+        }
+    }
+}
+.step-item {
+    padding-left: 50px;
+    padding-right: 50px;
+    img {
+        position: absolute;
+        right: -8%;
+        top: 50px;
+    }
+}
+.bg-intensive {
+    background: #FFFFFF;
+    border: 1px solid #EEEBEF;
+    box-shadow: 0px 1px 1px 0px #BCBCBD;
+    border-radius: 2px;
+    padding: 20px;
+    color: #696C6F;
+    text-align: left;
+    position: relative;
+    .row {
+        margin: 0;
+    }
+    .city, .age {
+        font-weight: 300;
+        margin: 0;
+    }
+    .name {
+        font-weight: 700;
+        margin: 0;
+        float: left;
+    }
+    .data {
+        font-weight: 300;
+        margin: 0;
+        float: right;
+    }
+}
+.triangle {
+    width: 36px;
+    height: 24px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    margin-top: -1px;
+    div {
+        background: #fff;
+        border: 1px solid #EEEBEF;
+        width: 24px;
+        height: 24px;
+        box-shadow: 1px 1px 1px 0px #BCBCBD;
+        transform: rotate(45deg);
+        left: 0;
+        right: 0;
+        margin-top: -12px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.testimonials {
+    .foto {
+        width: 130px;
+        height: 130px;
+        box-shadow: 1px 1px 1px 0px #D8D2D2;
+        border: 8px solid #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        left: 0;
+        right: 0;
+        margin: 12px auto 24px;
+    }
+}
+footer {
+    background: #2B2D2E;
+    color: #fff;
+    a {
+        color: #fff;
+    }
 }
