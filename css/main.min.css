@@ -55,6 +55,10 @@ h5 {
 }
 a.button {
   padding-top: 10px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   text-decoration: none;
   text-align: center;
@@ -285,11 +289,11 @@ a.button.white:hover {
 }
 .steps:before {
   background: #F5F5F5;
-  top: -22px;
+  top: -26px;
 }
 .steps:after {
   background: #F96B6F;
-  bottom: -22px;
+  bottom: -18px;
 }
 .steps .round {
   width: 160px;
@@ -342,4 +346,34 @@ a.button.white:hover {
 }
 .steps .round .step-3:before {
   content: "3";
+}
+.step-item {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.step-item img {
+  position: absolute;
+  right: -8%;
+  top: 50px;
+}
+@media all and (max-width: 991px) {
+  .step-item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .step-item img {
+    display: none;
+  }
+}
+@media all and (min-width: 635px) {
+  .step-item {
+    width: 33.33333333%;
+    float: left;
+  }
+}
+@media all and (max-width: 767px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
