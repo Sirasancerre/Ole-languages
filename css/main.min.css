@@ -169,7 +169,7 @@ a.button.white:hover {
   height: 100%;
   top: 0;
   position: absolute;
-  background-image: url(/img/park-guell_dif.png);
+  background-image: url(../img/park-guell_dif.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -221,16 +221,16 @@ a.button.white:hover {
   padding-top: 100px;
 }
 .courses .fr .content {
-  background-image: url(/img/Intensive-spanish-course.png);
+  background-image: url(../img/Intensive-spanish-course.png);
 }
 .courses .sc .content {
-  background-image: url(/img/semi-intensive-course.png);
+  background-image: url(../img/semi-intensive-course.png);
 }
 .courses .th .content {
-  background-image: url(/img/evening-spanish-course.png);
+  background-image: url(../img/evening-spanish-course.png);
 }
 .courses .fo .content {
-  background-image: url(/img/dele-preparation-course.png);
+  background-image: url(../img/dele-preparation-course.png);
 }
 .accomodations .fr,
 .accomodations .sc,
@@ -255,13 +255,13 @@ a.button.white:hover {
   line-height: 34px;
 }
 .accomodations .fr .content {
-  background-image: url(/img/student.png);
+  background-image: url(../img/student.png);
 }
 .accomodations .sc .content {
-  background-image: url(/img/host-family.png);
+  background-image: url(../img/host-family.png);
 }
 .accomodations .th .content {
-  background-image: url(/img/residenca.png);
+  background-image: url(../img/residenca.png);
 }
 .steps {
   background: #F96B6F;
@@ -325,19 +325,19 @@ a.button.white:hover {
   font-size: 22px;
 }
 .steps .round .step-1 {
-  background-image: url(/img/step-1.png);
+  background-image: url(../img/step-1.png);
 }
 .steps .round .step-1:before {
   content: "1";
 }
 .steps .round .step-2 {
-  background-image: url(/img/step-2.png);
+  background-image: url(../img/step-2.png);
 }
 .steps .round .step-2:before {
   content: "2";
 }
 .steps .round .step-3 {
-  background-image: url(/img/step-3.png);
+  background-image: url(../img/step-3.png);
 }
 .steps .round .step-3:before {
   content: "3";
