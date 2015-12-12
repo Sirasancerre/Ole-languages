@@ -15,14 +15,60 @@
 .container {
     background: #fff;
     margin-top: 120px;
-    padding: 50px;
+    position: relative;
+    padding: 40px;
     box-shadow: 0px 1px 2px 0px #ACAAAA;
 }
 .wrapper {
     background: #F5F5F5;
 }
 .first {
-    height: 530px
+    background-image: url(/img/0d553e61_original.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 112px;
+    position: relative;
+    h1, p.slogan {
+        margin-top: 0;
+        margin-bottom: 0;
+        background: rgba(0, 0, 0, 0.45);
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        padding: 0 20px;
+    }
+    h1 {
+        line-height: 72px;
+    }
+    .play {
+        display: block;
+        width: 85px;
+        height: 85px;
+        border: 3px solid #fff;
+        background: url(/img/play.svg) no-repeat center;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        margin: 30px auto;
+        
+    }
+    .seo {
+        background: rgba(0, 0, 0, 0.45);
+        padding: 15px 25px;
+        color: #fff;
+        left: 0;
+        right: 0;
+    }
+    p {
+        margin: 0 auto 10px;
+        max-width: 800px;
+    }
+    span.semibold {
+        font-weight: 600;
+    }
 }
 .courses {
     .fr,.sc,.th,.fo {
@@ -240,6 +286,30 @@
     }
 }
 .testimonials {
+    .mass-icon {
+        border: 3px solid #696C6F;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        padding-top: 10px;
+        float: left;
+        margin-top: 30px;
+        img {
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 36px;
+            height: 34px;
+        }
+    }
+    .our-stud {
+        text-align: left;
+        margin-left: 80px;
+        h2 {
+            margin: 0;
+            line-height: 85px;
+        }
+    }
     &.row {
         margin: 50px 0 0;
     }
@@ -253,5 +323,16 @@
         left: 0;
         right: 0;
         margin: 12px auto 24px;
+    }
+}
+.certificated {
+    right: 0;
+    top: -79px;
+    position: absolute;
+    margin-right: 20px;
+    img {
+        width: 60px;
+        height: 60px;
+        margin: 0 10px;
     }
 }

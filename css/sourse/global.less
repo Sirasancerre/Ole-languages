@@ -123,6 +123,21 @@ a.button {
     }
 }
 
+.navbar-toggle {
+    border: 1px solid #696C6F;
+    margin-top: 50px;
+    z-index: 5;
+    &.navbar-toggle-visible {
+        border: 1px solid #fff;
+        .icon-bar {
+            background: #fff;
+        }
+    }
+    .icon-bar {
+        background: #696C6F;
+    }
+}
+
 
 // ================ Chat ===============
 
@@ -176,18 +191,37 @@ a.button {
     
     float: left;
     display: block;
-    a {
+}
+.second-nav > li > a {
         color: #fff;
         font-size: 13px;
         padding-left: 10px;
         padding-right: 10px;
         border-right: 1px solid #fff;
     }
-}
 .second-nav {
     background: rgba(86, 90, 92, .67);
     list-style: none;
     position: absolute;
     border-radius: 30px;
     padding-left: 0;
+    .dropdown-toggle > img {
+        width: 20px;
+        height: 12px;        
+        margin-bottom: 2px;
+        margin-right: 4px;
+    }
+    .dropdown-menu {
+        width: 170px;
+        background-color: rgba(86, 90, 92, 0.67);
+        border: none;
+        border-radius: 4px;
+        box-shadow: none;
+        a {            
+            color: #fff;
+            font-size: 13px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
 }

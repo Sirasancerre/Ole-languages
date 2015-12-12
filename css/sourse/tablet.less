@@ -1,4 +1,4 @@
-@media all and (max-width: 991px) {
+@media all and (max-width: 991px) { //переход в режим планшета
     .step-item {
         padding-left: 15px;    
         padding-right: 15px;    
@@ -14,6 +14,9 @@
     .del {
         display: none;
     }
+    .certificated {
+        display: none;
+    }
 }
 @media all and (min-width: 635px) { // До этой ширины блоки co-sm-* еще должны отображаться в строку
     /*
@@ -27,18 +30,91 @@
     }
     */
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 767px) { // Tablets < 768px
     .social {
         margin-left: auto;
     }
     .copyright {
         text-align: center;
     }
-    .container {
-        padding-left: 0;
-        padding-right: 0;
-    }
     .help-chat .bocadilo {
         display: none;
+    }
+    .container {
+        padding: 0;
+        margin-top: 100px;
+    }
+    .second-nav > li > .no-tablet {
+        display: none;
+    }
+    header {        
+        position: fixed!important;
+        height: 100px;
+        background: #fff;
+        .logo {
+            top: -10px;
+        }
+        .second-nav {
+            top: 55px!important;
+            left: auto!important;
+            right: 100px;
+        }
+    }
+    .mobile-menu-wrapper {
+        display: block!important;
+        width: 288px;
+        transition: all 0.3s ease-in-out;
+        position: fixed;
+        left: 100%;
+        top: 0;
+        height: 100%;
+        z-index: 4;
+        background: #696C6F;
+        min-height: 0;
+        box-sizing: border-box;
+    }
+    .mobile-menu-wrapper--visible {
+        transform: translateX(-288px)
+    }
+    .menu-first {
+        height: 100px;
+        img {
+            margin-top:41px;
+        }
+    }
+}
+    
+@media all and (max-width: 540px) { //Mobile
+    .container {
+        margin-top: 65px;
+    }
+    header {        
+        position: fixed!important;
+        height: 65px;
+        .second-nav {
+            display: none;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            left: 20px;
+            top: -20px;
+            img {
+                width: 96px;
+                height: 73px;
+                position: absolute;
+                top: 24px;
+            }
+        }    
+    }
+    .navbar-toggle {
+        margin-top: 15px;
+    }
+    
+    .menu-first {
+        height: 65px;
+        img {
+            margin-top: 6px;
+        }
     }
 }

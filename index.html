@@ -9,10 +9,94 @@
 </head>
 <body>
     <div class="container">
+        <header>
+            <div class="logo">
+                <img src="/img/logo_white.png" alt="Olé Languages">
+            </div>
+            <button type="button" class="navbar-toggle " data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul class="second-nav">
+                <li><a href="" class="no-tablet">Testimonials</a></li>
+                <li><a href="" class="no-tablet">Photos</a></li>
+                <li><a href="" class="no-tablet">F.A.Q</a></li>
+                <li><a href="" class="no-tablet">Student VISA</a></li>
+                <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="/img/flag.png" alt="Flag">Choose your language <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Russian</a></li>
+                </ul>
+                </li>
+            </ul>
+            <div class="mobile-menu-wrapper">
+                <div class="menu-first">
+                    <img src="/img/logo_white_2.png" alt="Logo">
+                </div>
+                <ul class="navbar-nav">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">School <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">dropdown</a></li>
+                        <li><a href="#">dropdown</a></li>
+                        <li><a href="#">dropdown</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">dropdown</a></li>
+                        <li><a href="#">dropdown</a></li>
+                        <li><a href="#">dropdown</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Accomodation <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">Accomodation options</a></li>
+                        <li><a href="#">FAQ Accomodation</a></li>
+                        <li><a href="#">Accomodation photos</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="">Prices</a></li>
+                    <li><a href="">Activities</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Book now</a></li>
+                    <li>
+                        <ul class="second-nav">
+                            <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="/img/flag.png" alt="Flag">Choose your language <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">Russian</a></li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="certificated">
+                <img src="/img/Instituto_Cervantes_Logo.png" alt="Instituto Cervantes">
+                <img src="/img/accredited-csn2.png" alt="Accredited CSN">
+                <img src="/img/Since2005_transparent.png" alt="Since2005">
+            </div>
+            
+        </header>
         <div class="wrapper text-center">
             <div class="first">
                 <h1>Spanish Courses in Barcelona</h1>
                 <p class="slogan">Clases con profesores cualificados</p>
+                <a href="" class="play"></a>
+                <div class="seo">
+                    <p>Olé Languages is a <span class="semibold">professional Spanish language school</span> dedicated to teaching Spanish as a foreign language in an open, personal and <span class="semibold">enjoyable atmosphere</span> in Spain. We offer Spanish <span class="semibold">courses for all levels</span> to <span class="semibold">competitive prices</span> taught by dedicated, highly qualified native Spanish speakers
+</p>
+               <div class="fb-like" data-href="http://www.olelanguages.com/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+                </div>
             </div>
             <div class="row courses">
                 <div class="row">
@@ -140,11 +224,15 @@
             </div>
             <div class="row testimonials">
                 <div class="row">
-                    <div class="col-sm-1 col-sm-offset-2"></div>
-                    <div class="col-sm-7">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                       <div class="mass-icon">
+                           <img src="/img/mass-icon.png" alt="Our Students say">
+                       </div>
+                       <div class="our-stud">
                         <h2>Our Students say</h2>
                         <p>Learn Spanish in Barcelona studying one 
 of our Spanish courses at Olé Language School</p>
+                   </div>
                     </div>
                 </div>
                 <div class="row">
@@ -287,5 +375,17 @@ of our Spanish courses at Olé Language School</p>
         </footer>
     </div>
    <div class="park-guell"></div>
+   
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/theme.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 </body>
 </html>

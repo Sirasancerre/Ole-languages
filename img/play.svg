@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="37px" viewBox="0 0 34 37" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop" sketch:type="MSArtboardGroup" transform="translate(-909.000000, -395.000000)" fill="#FFFFFF">
+            <g id="Video" sketch:type="MSLayerGroup" transform="translate(435.000000, 147.000000)">
+                <g id="icon_play-" transform="translate(444.000000, 224.000000)" sketch:type="MSShapeGroup">
+                    <path d="M62.246875,39.560749 L35.046875,24.4271601 C34.0375,23.8491411 32.709375,23.8491411 31.7,24.4797073 C30.6375,25.0577263 30,26.1612172 30,27.3698024 L30,57.6369802 C30,58.8455655 30.6375,59.9490563 31.7,60.5270753 C32.23125,60.8423584 32.815625,61 33.4,61 C33.984375,61 34.56875,60.8423584 35.046875,60.5796225 L62.246875,45.4460336 C63.3625,44.8154674 64,43.7119766 64,42.5033913 C64,41.2948061 63.3625,40.1913152 62.246875,39.560749 Z" id="play"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
