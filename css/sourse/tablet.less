@@ -11,13 +11,16 @@
     .accomodations .th {
         display: none;
     }
+    .del {
+        display: none;
+    }
 }
 @media all and (min-width: 635px) { // До этой ширины блоки co-sm-* еще должны отображаться в строку
+    /*
     .col-sm-4 {
         width: 33.33333333%;
         float: left;
     }
-    /*
     .col-sm-6 {
         width: 50%;
         float: left;
@@ -25,6 +28,12 @@
     */
 }
 @media all and (max-width: 767px) {
+    .social {
+        margin-left: auto;
+    }
+    .copyright {
+        text-align: center;
+    }
     .container {
         padding-left: 0;
         padding-right: 0;

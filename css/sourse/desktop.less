@@ -33,6 +33,7 @@
             background-repeat:  no-repeat;
             background-size: cover;
             margin: 15px;
+            position: relative;
             h3, h4 {
                 background: #fff;
                 display: inline;
@@ -47,6 +48,48 @@
     .sc .content {background-image: url(../img/semi-intensive-course.png)}
     .th .content {background-image: url(../img/evening-spanish-course.png)}
     .fo .content {background-image: url(../img/dele-preparation-course.png)}
+    .cost {
+        position: absolute;
+        height: 42px;
+        color: #fff;
+        background: #4A4A4A;
+        padding: 8px;
+        top: 40px;
+        div{
+            display: inline-block;
+        }
+        .price {
+            font-weight: 700;
+            font-size: 24px;
+        }
+        &:after {
+            content: " ";
+            background: url(/img/Rectangle.svg);
+            width: 16px;
+            height: 42px;
+            position: absolute;
+            top: 0;
+            right: -15px;
+        }
+    }
+    .sale {
+        width: 200px;
+        height: 125px;
+        position: absolute;
+        top: 0px;
+        right: -1px;
+        overflow: hidden;
+        .promo {
+            background: #FF5A5F;
+            height: 27px;
+            position: absolute;
+            transform: rotate(36deg);
+            width: 230px;
+            text-align: right;
+            color: #fff;
+            padding-right: 25px;
+        }
+    }
 }
 .accomodations {
     .fr,.sc,.th {
@@ -197,6 +240,9 @@
     }
 }
 .testimonials {
+    &.row {
+        margin: 50px 0 0;
+    }
     .foto {
         width: 130px;
         height: 130px;
@@ -207,12 +253,5 @@
         left: 0;
         right: 0;
         margin: 12px auto 24px;
-    }
-}
-footer {
-    background: #2B2D2E;
-    color: #fff;
-    a {
-        color: #fff;
     }
 }
