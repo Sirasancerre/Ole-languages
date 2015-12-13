@@ -1,0 +1,61 @@
+.calendar {
+    tr {
+        background-color: white;
+    }
+    td {
+        height: 40px;
+        width: 40px;
+        text-align: center;
+        vertical-align: middle;
+        color: #626365;
+        font-family: Arial, serif;
+        background-color: white;
+    }
+    .prevMonth,
+    .nextMonth{
+        border-radius: 50%;
+        background-color: white;
+        color: #626365;
+        font-weight: bold;
+        font-family: Arial, serif;
+        padding: 8px 11px;
+        border: none;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    .prevMonth:focus,
+    .prevMonth:active,
+    .nextMonth:focus,
+    .nextMonth:active{
+        outline: none; /*я пытался*/
+    }
+    .curMonth {
+        text-align: center;
+        color: #626365;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Arial, serif;
+    }
+    .weekend {
+        background-color: #D6DAE6;
+        color: white;
+    }
+    .spDay0{
+        background-color: #7D99C8;
+        color: white;
+    }
+    .first-row{
+        background-color: #EEEEEE;
+    }
+    .red-circle{
+        border: 2px solid red;
+        border-radius: 50%;
+        padding: 2px;
+    }
+    .weekend-day{
+        color: #D6DAE6;
+    }
+    .non-cur-month{
+        color: #EAECF8;
+    }
+}
