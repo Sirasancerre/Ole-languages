@@ -95,12 +95,16 @@ a.button {
 }
 
 // ================= Navbar ====================
+
+.first {
+.navbar {
+    border: 0;
+}
 .navbar-theme {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
     font-weight: 700;
-    background-color: #696C6F;
-    opacity: 0.78;
+    background-color: rgba(105,108,111,.78);
     border-radius: 0;
     .navbar-toggle {
         border-color: #696C6F;
@@ -112,9 +116,18 @@ a.button {
         }
     }
     .navbar-nav {
+        padding-left: 1px;
         li {
+            &.border {
+                background: #fff;
+                width: 2px;
+                height: 30px;
+                top: 10px;
+            }
             a {
                 color: #fff;
+                padding-right: 30px;
+                padding-left: 29px;
                 &:hover, &:focus {
                     background-color: #4A4A4A;
                 }
@@ -122,23 +135,36 @@ a.button {
         }
     }
 }
-
-.navbar-toggle {
-    border: 1px solid #696C6F;
-    margin-top: 50px;
-    z-index: 5;
-    &.navbar-toggle-visible {
-        border: 1px solid #fff;
-        .icon-bar {
-            background: #fff;
-        }
-    }
-    .icon-bar {
-        background: #696C6F;
-    }
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #4A4A4A;
 }
 
-
+.dropdown-menu {
+    border: 1px solid #D8D8D8;
+    border-radius: 0;
+    box-shadow: none;
+}
+.dropdown-menu>li {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.dropdown-menu>li>a {
+    color: #696C6F!important;
+    font-size: 15px;
+    padding-left: 0!important;
+    padding-right: 30px!important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all .3s;
+    &:hover {
+        background: none!important;
+        transform: translateX(5px)
+    }
+}
+.dropdown-menu .divider {
+    margin: 0 30px;
+}
+}
 // ================ Chat ===============
 
 .help-chat {
@@ -212,7 +238,7 @@ a.button {
         margin-right: 4px;
     }
     .dropdown-menu {
-        width: 170px;
+        width: 192px;
         background-color: rgba(86, 90, 92, 0.67);
         border: none;
         border-radius: 4px;

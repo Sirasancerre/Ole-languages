@@ -1,0 +1,12 @@
+.panel-group {
+  margin-bottom: 20px;
+  width: 944px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #FFFFFF;
+  border: 1px solid #E1E5E5;
+  box-shadow: 1px -1px 3px 0px #e0e1e6;
+  border-radius: 2px;
+  padding: 50px;
+}
