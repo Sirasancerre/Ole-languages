@@ -1,6 +1,13 @@
 .row {
     margin: 50px 0;
 }
+.margin-null {
+    margin: 0;
+}
+.padding-ud {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .park-guell {
     z-index: -1;
     width: 100%;
@@ -23,12 +30,14 @@
     background: #F5F5F5;
 }
 .first {
-    background-image: url(/img/0d553e61_original.png);
+    background-image: url(../img/0d553e61_original.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 112px;
+    padding-bottom: 50px;
     position: relative;
+    min-height: 331px;
     h1, p.slogan {
         margin-top: 0;
         margin-bottom: 0;
@@ -48,7 +57,7 @@
         width: 85px;
         height: 85px;
         border: 3px solid #fff;
-        background: url(/img/play.svg) no-repeat center;
+        background: url(../img/play.svg) no-repeat center;
         border-radius: 50%;
         left: 0;
         right: 0;
@@ -110,7 +119,7 @@
         }
         &:after {
             content: " ";
-            background: url(/img/Rectangle.svg);
+            background: url(../img/Rectangle.svg);
             width: 16px;
             height: 42px;
             position: absolute;
@@ -158,29 +167,35 @@
     .sc .content {background-image: url(../img/host-family.png)}
     .th .content {background-image: url(../img/residenca.png)}   
 }
+.round-top:before {
+    content: " ";
+    width: 44px;
+    height: 44px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 22px;
+    position: absolute;
+    background: #F5F5F5;
+    top: -26px;
+}
+.round-bottom:after {
+    content: " ";
+    width: 44px;
+    height: 44px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 22px;
+    position: absolute;
+    background: #F96B6F;
+    bottom: -18px;
+}
 .steps {
     background: #F96B6F;
-    
+    position: relative;
     p, h2, h5 {
         color: #fff!important;
-    }
-    &:after, &:before {
-        content: " ";
-        width: 44px;
-        height: 44px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        border-radius: 22px;
-        position: relative;
-    }
-    &:before {
-        background: #F5F5F5;
-        top: -26px;
-    }
-    &:after {
-        background: #F96B6F;
-        bottom: -18px;
     }
     .round {
         width: 160px;
