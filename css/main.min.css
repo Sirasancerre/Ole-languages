@@ -124,6 +124,9 @@ a.button.white:hover {
 .first .navbar-theme .navbar-nav {
   padding-left: 1px;
 }
+.first .navbar-theme .navbar-nav li.active {
+  background: #FF5A5F;
+}
 .first .navbar-theme .navbar-nav li.border {
   background: #fff;
   width: 2px;
