@@ -1,6 +1,13 @@
 .row {
     margin: 50px 0;
 }
+.margin-null {
+    margin: 0;
+}
+.padding-ud {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .park-guell {
     z-index: -1;
     width: 100%;
@@ -15,14 +22,62 @@
 .container {
     background: #fff;
     margin-top: 120px;
-    padding: 50px;
+    position: relative;
+    padding: 40px;
     box-shadow: 0px 1px 2px 0px #ACAAAA;
 }
 .wrapper {
     background: #F5F5F5;
 }
 .first {
-    height: 530px
+    background-image: url(../img/0d553e61_original.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 112px;
+    padding-bottom: 50px;
+    position: relative;
+    min-height: 331px;
+    h1, p.slogan {
+        margin-top: 0;
+        margin-bottom: 0;
+        background: rgba(0, 0, 0, 0.45);
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+        padding: 0 20px;
+    }
+    h1 {
+        line-height: 72px;
+    }
+    .play {
+        display: block;
+        width: 85px;
+        height: 85px;
+        border: 3px solid #fff;
+        background: url(../img/play.svg) no-repeat center;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        margin: 30px auto;
+        
+    }
+    .seo {
+        background: rgba(0, 0, 0, 0.45);
+        padding: 15px 25px;
+        color: #fff;
+        left: 0;
+        right: 0;
+    }
+    p {
+        margin: 0 auto 10px;
+        max-width: 800px;
+    }
+    span.semibold {
+        font-weight: 600;
+    }
 }
 .courses {
     .fr,.sc,.th,.fo {
@@ -33,6 +88,7 @@
             background-repeat:  no-repeat;
             background-size: cover;
             margin: 15px;
+            position: relative;
             h3, h4 {
                 background: #fff;
                 display: inline;
@@ -47,6 +103,48 @@
     .sc .content {background-image: url(../img/semi-intensive-course.png)}
     .th .content {background-image: url(../img/evening-spanish-course.png)}
     .fo .content {background-image: url(../img/dele-preparation-course.png)}
+    .cost {
+        position: absolute;
+        height: 42px;
+        color: #fff;
+        background: #4A4A4A;
+        padding: 8px;
+        top: 40px;
+        div{
+            display: inline-block;
+        }
+        .price {
+            font-weight: 700;
+            font-size: 24px;
+        }
+        &:after {
+            content: " ";
+            background: url(../img/Rectangle.svg);
+            width: 16px;
+            height: 42px;
+            position: absolute;
+            top: 0;
+            right: -15px;
+        }
+    }
+    .sale {
+        width: 200px;
+        height: 125px;
+        position: absolute;
+        top: 0px;
+        right: -1px;
+        overflow: hidden;
+        .promo {
+            background: #FF5A5F;
+            height: 27px;
+            position: absolute;
+            transform: rotate(36deg);
+            width: 230px;
+            text-align: right;
+            color: #fff;
+            padding-right: 25px;
+        }
+    }
 }
 .accomodations {
     .fr,.sc,.th {
@@ -69,30 +167,35 @@
     .sc .content {background-image: url(../img/host-family.png)}
     .th .content {background-image: url(../img/residenca.png)}   
 }
-//@media 1099
+.round-top:before {
+    content: " ";
+    width: 44px;
+    height: 44px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 22px;
+    position: absolute;
+    background: #F5F5F5;
+    top: -26px;
+}
+.round-bottom:after {
+    content: " ";
+    width: 44px;
+    height: 44px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 22px;
+    position: absolute;
+    background: #F96B6F;
+    bottom: -18px;
+}
 .steps {
     background: #F96B6F;
-    
+    position: relative;
     p, h2, h5 {
         color: #fff!important;
-    }
-    &:after, &:before {
-        content: " ";
-        width: 44px;
-        height: 44px;
-        left: 0;
-        right: 0;
-        margin: auto;
-        border-radius: 22px;
-        position: relative;
-    }
-    &:before {
-        background: #F5F5F5;
-        top: -26px;
-    }
-    &:after {
-        background: #F96B6F;
-        bottom: -18px;
     }
     .round {
         width: 160px;
@@ -197,6 +300,33 @@
     }
 }
 .testimonials {
+    .mass-icon {
+        border: 3px solid #696C6F;
+        border-radius: 50%;
+        width: 56px;
+        height: 56px;
+        padding-top: 10px;
+        float: left;
+        margin-top: 30px;
+        img {
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 36px;
+            height: 34px;
+        }
+    }
+    .our-stud {
+        text-align: left;
+        margin-left: 80px;
+        h2 {
+            margin: 0;
+            line-height: 85px;
+        }
+    }
+    &.row {
+        margin: 50px 0 0;
+    }
     .foto {
         width: 130px;
         height: 130px;
@@ -209,10 +339,29 @@
         margin: 12px auto 24px;
     }
 }
-footer {
-    background: #2B2D2E;
-    color: #fff;
-    a {
-        color: #fff;
+.certificated {
+    right: 0;
+    top: -79px;
+    position: absolute;
+    margin-right: 20px;
+    img {
+        width: 60px;
+        height: 60px;
+        margin: 0 10px;
+    }
+}
+// ========================= Mobile button ==============
+.navbar-toggle {
+    border: 1px solid #696C6F;
+    margin-top: 50px;
+    z-index: 5;
+    &.navbar-toggle-visible {
+        border: 1px solid #fff;
+        .icon-bar {
+            background: #fff;
+        }
+    }
+    .icon-bar {
+        background: #696C6F;
     }
 }
