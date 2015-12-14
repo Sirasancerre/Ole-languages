@@ -10,9 +10,12 @@ body {
     font-size: 15px;
     line-height: 25px;
     background-image: url(../img/park-guell_dif.png);
-    background-position: center;
+    background-position: center;;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed
+}
+img {
+    max-width: 100%;
 }
 h1 {
     font-family: "Kavoon-regular";
@@ -122,9 +125,12 @@ a.button {
             padding: 0;
         }
     }
-    .navbar-nav {
+    .navbar-nav { 
         padding-left: 1px;
         li {
+            &.active {
+                background: #FF5A5F;
+            }
             &.border {
                 background: #fff;
                 width: 2px;
