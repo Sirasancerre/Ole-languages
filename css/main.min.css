@@ -394,7 +394,9 @@ a.button.white:hover {
   width: 24px;
   height: 24px;
   box-shadow: 1px 1px 1px 0px #BCBCBD;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   left: 0;
   right: 0;
   margin-top: -12px;
