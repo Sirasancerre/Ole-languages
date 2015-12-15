@@ -57,7 +57,7 @@ h5 {
   color: #fff;
   line-height: 24px;
 }
-a.button {
+.button {
   padding-top: 10px;
   left: 0;
   right: 0;
@@ -67,7 +67,7 @@ a.button {
   text-decoration: none;
   text-align: center;
 }
-a.button.red {
+.button.red {
   width: 257px;
   height: 49px;
   font-size: 18px;
@@ -80,10 +80,10 @@ a.button.red {
   color: #FFF;
   cursor: pointer;
 }
-a.button.red:hover {
+.button.red:hover {
   background: #FF7D80;
 }
-a.button.white {
+.button.white {
   width: 231px;
   height: 48px;
   font-size: 18px;
@@ -93,7 +93,7 @@ a.button.white {
   color: #696C6F;
   cursor: pointer;
 }
-a.button.white:hover {
+.button.white:hover {
   border: 1px solid #aaa;
 }
 .first .navbar {
@@ -188,6 +188,7 @@ a.button.white:hover {
   position: fixed;
   right: 10px;
   top: 40%;
+  z-index: 11;
 }
 .help-chat .bocadilo {
   position: absolute;
@@ -275,15 +276,32 @@ a.button.white:hover {
   padding-left: 10px;
   padding-right: 10px;
 }
+.form-red,
+.form-white {
+  height: 51px;
+  border: 0;
+  box-shadow: none;
+  border-radius: 5px;
+}
+.form-red {
+  background: #FF4C52;
+  color: #fff;
+}
 .row {
   margin: 50px 0;
 }
 .margin-null {
   margin: 0;
 }
+.padding-null {
+  padding: 0!important;
+}
 .padding-ud {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+#map {
+  height: 331px;
 }
 .container {
   background: #fff;

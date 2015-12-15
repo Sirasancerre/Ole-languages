@@ -1,0 +1,78 @@
+.success-mess {
+  background: #CBF0E0;
+  z-index: 1;
+}
+.success-mess h2 {
+  color: #61C697;
+  line-height: 30px!important;
+}
+.success-mess:after {
+  background: #CBF0E0;
+}
+.row {
+  position: relative;
+  padding: 50px 0;
+  margin: 0;
+}
+.contacts-1 {
+  background: #fff;
+  color: #7C7F83;
+}
+.contacts-1 h5 {
+  color: #696C6F;
+}
+.contacts-1 a {
+  color: #FF5A5F;
+}
+.contacts-1 p {
+  margin: 0;
+}
+.contacts-1 .red {
+  color: #ff5a5f;
+}
+.contacts-1 .green {
+  color: #3bdcc4;
+}
+.contacts-1 .violet {
+  color: #cb3be6;
+}
+.contacts-1 .col-sm-4 {
+  margin-top: 20px;
+}
+.contacts-2 .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+.contacts-2 h5 {
+  color: #696C6F;
+}
+.contacts-2 h5.right {
+  text-align: right;
+}
+.contacts-2 p {
+  color: #696C6F;
+}
+.contacts-2:before {
+  background: #fff;
+}
+.contacts-2 .button {
+  width: 100%;
+}
+.contacts-3 {
+  background: #FF7277;
+}
+.contacts-3:before {
+  background: #F5F5F5;
+}
+.contacts-4 {
+  background-image: url(../img/evening_cours.png);
+}
+.contacts-4:before {
+  background: #FF7277;
+}
+.phone-cons h2 {
+  color: #fff;
+}
+.phone-cons .testimonials .mass-icon {
+  border-color: #fff;
+}
