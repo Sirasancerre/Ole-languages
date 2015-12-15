@@ -14,9 +14,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed
 }
-img {
-    max-width: 100%;
-}
+
 h1 {
     font-family: "Kavoon-regular";
     font-size: 55px;
@@ -116,10 +114,22 @@ a.button {
     bottom: 0;
     position: absolute;
     margin: 0;
+    z-index: 10;
+    &.clay {
+        position: fixed;
+        top: 0;
+        bottom: auto;
+        left: 0;
+        right: 0;
+    }
     .navbar-toggle {
         border-color: #696C6F;
     }
     .container-fluid {
+        width: 1089px;
+        left: 0;
+        right: 0;
+        margin: auto;
         padding: 0;
         .navbar-collapse {
             padding: 0;
@@ -232,6 +242,14 @@ a.button {
     display: block;
     &.active {
         background: #FF5A5F;
+        a {
+            border-right: 0;
+        }
+    }
+    &.active-bef {
+        a {
+            border-right: 0;
+        }
     }
 }
 .second-nav > li > a {
@@ -247,6 +265,7 @@ a.button {
     position: absolute;
     border-radius: 30px;
     padding-left: 0;
+    overflow: hidden;
     .dropdown-toggle > img {
         width: 20px;
         height: 12px;        

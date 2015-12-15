@@ -13,9 +13,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-img {
-  max-width: 100%;
-}
 h1 {
   font-family: "Kavoon-regular";
   font-size: 55px;
@@ -111,11 +108,23 @@ a.button.white:hover {
   bottom: 0;
   position: absolute;
   margin: 0;
+  z-index: 10;
+}
+.first .navbar-theme.clay {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
 }
 .first .navbar-theme .navbar-toggle {
   border-color: #696C6F;
 }
 .first .navbar-theme .container-fluid {
+  width: 1089px;
+  left: 0;
+  right: 0;
+  margin: auto;
   padding: 0;
 }
 .first .navbar-theme .container-fluid .navbar-collapse {
@@ -226,6 +235,12 @@ a.button.white:hover {
 .second-nav > li.active {
   background: #FF5A5F;
 }
+.second-nav > li.active a {
+  border-right: 0;
+}
+.second-nav > li.active-bef a {
+  border-right: 0;
+}
 .second-nav > li > a {
   color: #fff;
   font-size: 13px;
@@ -239,6 +254,7 @@ a.button.white:hover {
   position: absolute;
   border-radius: 30px;
   padding-left: 0;
+  overflow: hidden;
 }
 .second-nav .dropdown-toggle > img {
   width: 20px;
@@ -564,9 +580,12 @@ a.button.white:hover {
   margin: 0;
 }
 .bg-intensive .name {
-  font-weight: 700;
   margin: 0;
   float: left;
+  font-weight: 300;
+}
+.bg-intensive .bold {
+  font-weight: 700;
 }
 .bg-intensive .data {
   font-weight: 300;
@@ -604,8 +623,10 @@ a.button.white:hover {
   width: 56px;
   height: 56px;
   padding-top: 10px;
+  padding-right: 0;
   float: left;
-  margin-top: 30px;
+  margin-right: 25px;
+  margin-top: 5px;
 }
 .testimonials .mass-icon img {
   left: 0;
@@ -616,7 +637,6 @@ a.button.white:hover {
 }
 .testimonials .our-stud {
   text-align: left;
-  margin-left: 80px;
 }
 .testimonials .our-stud h2 {
   margin: 0;
@@ -625,7 +645,7 @@ a.button.white:hover {
 .testimonials.row {
   margin: 50px 0 0;
 }
-.testimonials .foto {
+.person-foto {
   width: 130px;
   height: 130px;
   box-shadow: 1px 1px 1px 0px #D8D2D2;
@@ -742,6 +762,9 @@ a.button.white:hover {
   }
   .certificated {
     display: none;
+  }
+  .container-fluid {
+    width: 890px!important;
   }
   .navbar-theme .navbar-nav li a {
     padding-right: 15px!important;
@@ -1033,6 +1056,9 @@ header .second-nav {
   width: 21px;
   margin: 0px 7px 3px 5px;
 }
+.scroll::-webkit-scrollbar {
+  width: 0px;
+}
 .calendar tr {
   background-color: white;
 }
@@ -1228,5 +1254,55 @@ header .second-nav {
   }
   .our-activ > p {
     margin: 10px 16px;
+  }
+}
+.testim a {
+  color: #FF5A5F;
+}
+.testim p {
+  font-weight: 600;
+}
+.testim .name img {
+  margin-right: 10px;
+}
+.testim .row {
+  margin-top: 20px;
+}
+.tst .row {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+.tst .triangle {
+  display: none;
+  margin-bottom: -1px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  z-index: 1;
+  position: relative;
+}
+.tst .triangle div {
+  box-shadow: -1px -1px 1px 0px #bcbcbd;
+}
+.tst .col-md-10 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.tst .any-q {
+  padding: 10px 0 60px;
+}
+@media all and (max-width: 540px) {
+  .tst .media-left {
+    left: 0;
+    right: 0;
+    margin: 20px auto;
+    display: block;
+    float: none;
+  }
+  .tst .our-stud {
+    text-align: center!important;
+  }
+  .tst .triangle {
+    display: block;
   }
 }
