@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="18" viewBox="0 0 3000 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #F5F5F5;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Эллипс_1" data-name="Эллипс 1" class="cls-1" d="M3000,18V0s-1478.22.059-1478.36,0A22.005,22.005,0,0,1,1500,18,22,22,0,0,1,1478.38.083C1478.46-.022,0,0,0,0V18H3000Z"/>
+</svg>

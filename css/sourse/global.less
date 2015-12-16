@@ -65,11 +65,11 @@ h5 {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    display: block;
+    //display: block;
     text-decoration: none;
     text-align: center;
     &.red {
-        width: 257px;
+        //width: 257px;
         height: 49px;
         font-size: 18px;
         background: #FF5A5F;
@@ -85,7 +85,7 @@ h5 {
         }
     }
     &.white {
-        width: 231px;
+        //width: 231px;
         height: 48px;
         font-size: 18px;
         background: #fff;
@@ -295,10 +295,16 @@ h5 {
     box-shadow: none;
     border-radius: 5px;
 }
-.form-red {
+.form-red, .form-red:focus, .form-red {
     background: #FF4C52;
     color: #fff;    
 }
+.form-red::-webkit-input-placeholder {
+    color: #fff;
+}
+.form-red::-moz-placeholder {
+    color: #fff;
+}
 .form-white {
-    
+    color: #999;
 }

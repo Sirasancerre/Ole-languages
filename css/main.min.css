@@ -63,12 +63,10 @@ h5 {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  display: block;
   text-decoration: none;
   text-align: center;
 }
 .button.red {
-  width: 257px;
   height: 49px;
   font-size: 18px;
   background: #FF5A5F;
@@ -84,7 +82,6 @@ h5 {
   background: #FF7D80;
 }
 .button.white {
-  width: 231px;
   height: 48px;
   font-size: 18px;
   background: #fff;
@@ -283,9 +280,20 @@ h5 {
   box-shadow: none;
   border-radius: 5px;
 }
+.form-red,
+.form-red:focus,
 .form-red {
   background: #FF4C52;
   color: #fff;
+}
+.form-red::-webkit-input-placeholder {
+  color: #fff;
+}
+.form-red::-moz-placeholder {
+  color: #fff;
+}
+.form-white {
+  color: #999;
 }
 .row {
   margin: 50px 0;
@@ -846,6 +854,16 @@ h5 {
   }
   .scroll {
     top: 65px!important;
+  }
+  .left-to-center .media-left {
+    left: 0;
+    right: 0;
+    margin: auto auto 20px!important;
+    display: block;
+    float: none;
+  }
+  .left-to-center .media-body {
+    text-align: center;
   }
 }
 footer {
