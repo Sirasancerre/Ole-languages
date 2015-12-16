@@ -75,6 +75,110 @@
     }
 }
 .courses {
+    .active {
+        .content {
+            //display: none;
+        }
+        .full-desc {
+            display: block;
+            position: fixed;
+            top: 0;
+            z-index: 11;
+            background: rgba(74,74,74,.76);
+            text-align: left;
+            color: #696C6F;
+            .full-desc-block {
+                width: 456px;
+                left: 0;
+                right: 0;
+                margin: 150px auto;
+                background: #fff;
+                box-shadow: 5px 5px 20px rgba(72, 74, 79, .5);
+            }
+            .content {
+                margin: 0;
+                border-bottom: 6px solid;
+                .fr {border-bottom-color: #7E99C9};
+                .sc {border-bottom-color: #A4E9DB};
+                .th {border-bottom-color: #FFD48E};
+                .fo {border-bottom-color: #D4C1EB};
+                .fi {border-bottom-color: #F1E87D};
+                .sx {border-bottom-color: #FFC2DA};
+            }
+            h5, p {
+                color: #696C6F;
+            }
+            p {
+                margin-bottom: 30px;
+            }
+            a {
+                color: #FF5A5F;
+                cursor: pointer;
+            }
+            .light {
+                opacity: .36;
+            }
+            img {
+                &.i1 {width: 28px; margin-right: 4px}
+                &.i2 {width: 21px; margin-right: 10px;}
+                &.i3 {width: 26px; margin-right: 7px}
+                &.i4 {width: 25px; margin-right: 6px}
+            }
+            .cal {
+                border-radius: 2px;
+                padding: 30px 0;
+                margin-top: 0;
+                margin-bottom: 15px;
+                background: #EEEEEF;
+                .calendar {
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+            .gghnh {
+                margin: 20px 0;
+                position: relative;
+                background: #EEEEEF;
+                border-radius: 2px;
+                padding: 40px 20px;
+                h5 {
+                    margin-top: 0;
+                    font-size: 15px;
+                }
+                .dropdown-toggle {
+                    
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+                .btn-default {
+                    border-color: #CFCFD5;
+                    color: #BCBBBB;
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+                .cost {
+                    
+                    padding: 8px 25px;
+                    right: 0;
+                    top: 72px;
+                    &:after {
+                        right: auto;
+                        left: -31px;
+                        border-left: 21px solid transparent;
+                        border-right-width: 21px;
+                        border-right-style: solid;
+                    }
+                }
+                
+            }
+            .pish {
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
+    }
+    .full-desc {display: none}
     .fr,.sc,.th,.fo,.fi,.sx {
         padding: 0;
         display: block;
@@ -125,64 +229,78 @@
                 opacity: 0;
             }
         }
-        &:hover {
+        &.active, .content:hover {
             .blackout {opacity: .3}
             .plus {color: #7E99C9; background: #fff;}
         }
     }
     .fr {
-        &:hover {
+        &.active, .content:hover {
+            .gghnh .cost:after {border-right-color: #7E99C9;}
             .cost {
                 background: #7E99C9;
-                &:after {
-                    border-left-color: #7E99C9;
-                }
+                &:after {border-left-color: #7E99C9;}
             }
         }
         .content {background-image: url(../img/Intensive-spanish-course.png)}
     }
     .sc {
-        &:hover .cost {
-            background: #36D7B7;
-            &:after {
-                border-left-color: #36D7B7;
+        &.active, .content:hover {
+            .gghnh .cost:after {border-right-color: #36D7B7;}
+            .cost {
+                background: #36D7B7;
+                &:after {
+                    border-left-color: #36D7B7;
+                }
             }
         }
         .content {background-image: url(../img/semi-intensive-course.png)}
     }
     .th {
-        &:hover .cost {
-            background: #F5A623;
-            &:after {
-                border-left-color: #F5A623;
+        &.active, .content:hover {
+            .gghnh .cost:after {border-right-color: #F5A623;}
+            .cost {
+                background: #F5A623;
+                &:after {
+                    border-left-color: #F5A623;
+                }
             }
         }
         .content {background-image: url(../img/evening-spanish-course.png)}
     }
     .fo {
-        &:hover .cost {
-            background: #A991C7;
-            &:after {
-                border-left-color: #A991C7;
+        &.active, .content:hover {
+            .gghnh .cost:after {border-right-color: #A991C7;}
+            .cost {
+                background: #A991C7;
+                &:after {
+                    border-left-color: #A991C7;
+                }
             }
         }
         .content {background-image: url(../img/dele-preparation-course.png)}
     }
     
     .fi {
-        &:hover .cost {
+        &.active, .content:hover {
+            .gghnh .cost:after {border-right-color: #F8E71C;}
+            .cost {
             background: #F8E71C;
-            &:after {
-                border-left-color: #F8E71C;
+                &:after {
+                    border-left-color: #F8E71C;
+                }
             }
         }
         .content {background-image: url(../img/evening_cours.png)}
     }
     .sx {
-        &:hover .cost {
-            background: #DB0A5B;
-            &:after {
-                border-left-color: #DB0A5B;
+        &.active, .content:hover {
+            .gghnh .cost:after {border-right-color: #DB0A5B;}
+            .cost {
+                background: #DB0A5B;
+                &:after {
+                    border-left-color: #DB0A5B;
+                }
             }
         }
         .content {background-image: url(../img/20.png)}

@@ -85,7 +85,7 @@ Calendar.prototype.print = function() {
         for(var j = 0; j < 7; j++)
         {
             var f = 0; //flag
-            var classes = "";
+            var classes = "day-";
             var circle = 0;
             weekends.forEach(function(item) {
                 if (t.getDate() == item[0] && t.getMonth() + 1 == item[1] && t.getFullYear() == item[2])

@@ -2,3 +2,10 @@
   width: 29px;
   height: 33px;
 }
+.steps .button {
+  background: #fff;
+  color: #F96B6F;
+}
+.steps .button:hover {
+  background: #eee;
+}

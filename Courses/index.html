@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/courses.min.css">
+    <script src="js/calendar.js"></script>
 </head>
 <body>
     <div class="container">
@@ -163,7 +164,7 @@
             </div>
 <!-- ================================ Block ================================ -->
     
-            <div class="row courses">
+            <div class=" courses">
                 <div class="row testimonials left-to-center">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="media">
@@ -178,7 +179,7 @@
                     </div>
                 </div>
                 <div class="row text-center">
-                    <a href="#" class="col-sm-6 fr">
+                    <div href="#" class="col-sm-6 fr"> <!-- clas="active" -->
                         <div class="content">
                             <div class="blackout"></div>
                             <div class="inline-h">
@@ -191,7 +192,120 @@
                                 <div class="price">135€</div>
                             </div>
                         </div>
-                    </a>
+                        <div class="full-desc scroll">
+                            <div class="full-desc-block">
+                                <div class="content text-center">
+                                    <div class="blackout"></div>
+                                    <div class="inline-h">
+                                        <h3>Intensive Spanish Course</h3>
+                                    </div>
+                                    <h4>20 lessons/ week</h4>
+                                    <div class="cost">
+                                        <div>from</div>
+                                        <div class="price">135€</div>
+                                    </div>
+                                </div>
+                                <div class="row cal">
+                                    <div class="col-sm-6">
+                                        
+                                        <div class="media">
+                                            <div class="media-left media-top">
+                                                <img class="media-object i1" src="img/calendar_clock.png" alt="Our Students say">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="media-heading">20 lessons a Week</span>
+                                                <span>4 lessons a Day</span>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left media-top">
+                                                <img class="media-object i2" src="img/icon-calendar.png" alt="Our Students say">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="media-heading">Monday to Friday</span>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left media-top">
+                                                <img class="media-object i3" src="img/icon-calendar-lenght.png" alt="Our Students say">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="media-heading light">Lenght of the course</span>
+                                                <span>From 1 to 52 weeks</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="media">
+                                            <div class="media-left media-top">
+                                                <img class="media-object i4" src="img/icon-clock-lenght.png" alt="Our Students say">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="media-heading light">Lenght of the lessons</span>
+                                                <span>45 minutes</span>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left media-top">
+                                                <img class="media-object i2" src="img/icon-clock.png" alt="Our Students say">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="media-heading">9h30 to 13h30 or 
+14h40  to 18h30</span>
+                                            </div>
+                                        </div>
+                                        <div class="media">
+                                            <div class="media-left media-top">
+                                                <img class="media-object i2" src="img/icon-check.png" alt="Our Students say">
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="media-heading">Available all year</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pish">
+                                    <h5>Cours Description</h5>
+                                    <p>This intensive Spanish course is conceived for adults of any age who wish to improve their Spanish language skills rapidly. The intensive course runs four lessons per day from Monday to Friday in the morning or the afternoon.</p>
+                                    <p>Based on an immersive, communication-based approach to language acquisition students learn the Spanish grammar step by step according to the Common European Framework of Reference (CEFR) accompanied by writing, listening and conversational exercises as, for example, reading  newspaper articles, practicing telephone conversations and watching Spanish films followed by analysis and debate. 
+</p>
+                                   <p>Those who would like to practice their Spanish further and improve their oral skills can combine the intensive course with 5 lessons of conversation classes per week (1 hr/day). <a class="" data-toggle="collapse" data-target="#hide-me">Check Starting dates ></a></p>
+                                   
+                                    <div id="hide-me" class="collapse">
+                                        <h5>Starting dates</h5>
+                                        <p>If you already have a basic understanding of Spanish it is possible  to start any course any given Monday throughout the year (in case Monday is a public holiday classes start on Tuesday). Please note that it is essential to do the level test before the course start.  
+For absolute beginner we offer intensive and semi-intensive courses every other week. The start dates for beginners are marked in green.</p>
+                                       <div class="cal">
+                                           <table class="calendar" id="calendar"></table>
+                                       </div>
+                                    </div>
+                                    <div class="gghnh">
+                                        <h5>Intensive Course’s prices</h5>
+                                        <div class="btn-group">
+                                          <button type="button" class="btn btn-default">1 week</button>
+                                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="caret"></span>
+                                          </button>
+                                          <ul class="dropdown-menu">
+                                            <li><a href="#">1 week</a></li>
+                                            <li><a href="#">2 week</a></li>
+                                            <li><a href="#">3 week</a></li>
+                                            <li><a href="#">4 week</a></li>
+                                          </ul>
+                                        </div>
+                                        
+                                        <div class="cost">
+                                            <div class="price">135€</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-default btn-block button red">Book Intensive Course</button>
+                                    <button type="submit" class="btn btn-default btn-block button white">Download Course</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
                     <a href="#" class="col-sm-6 sc">
                         <div class="content">
                             <div class="blackout"></div>
@@ -288,6 +402,132 @@
                 </div>
                 <a href="" class="button btn-block-max white">View all Courses</a>
                 
+                <div class="row steps round-top round-bottom padding-ud text-center">
+                    <div class="row margin-null">
+                        <div class="col-md-8 col-md-offset-2">
+                            <h2>Facilities and Services</h2>
+                            <p>Furthermore, with a maximum of eight people per class our groups are much smaller than in most other schools.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 step-item">
+                            <div class="round">
+                                <div class="step-1"></div>
+                            </div>
+                            <h5>Facilities</h5>
+                            <p>WiFi (Wireless Internet),
+Air-conditioned class rooms,
+Library with DVDs and reading material</p>
+                            <img src="img/Arrow-right.png" alt="Next step">
+                        </div>
+                        <div class="col-sm-4 step-item">
+                            <div class="round">
+                                <div class="step-2"></div>
+                            </div>
+                            <h5>General</h5>
+                            <p>Groups of maximun 8 people,
+Highly qualified team of Spanish teachers,
+Each week our prices get lower</p>
+                            <img src="img/Arrow-right.png" alt="Next step">
+                        </div>
+                        <div class="col-sm-4 step-item">
+                            <div class="round">
+                                <div class="step-3"></div>
+                            </div>
+                            <h5>Services</h5>
+                            <p>Cultural activities,
+Language Exchange,
+Certificates</p>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-default btn-block-max button red">Book Now</a>
+                </div>
+                <div class="row testimonials">
+                <div class="row left-to-center">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <div class="media">
+                            <div class="media-left mass-icon">
+                                <img class="media-object" src="img/mass-icon.png" alt="Our Students say">
+                            </div>
+                            <div class="media-body our-stud">
+                                <h2 class="media-heading">Our Students say</h2>
+                                <p>Learn Spanish in Barcelona studying one 
+        of our Spanish courses at Olé Language School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4 col-lg-3">
+                        <div class="bg-intensive">
+                            <p>“ Olé is a good language school in order to learn Spanish fast and easily, but also to get to know a lot of people. Olé seems like a melting pot of many people who all have the same goal: to learn Spanish.”</p>
+                            <p class="city">Germany</p>
+                            <p class="age">21 years Old</p>
+                            <div class="row">
+                                <p class="name bold">Bill and tom</p>
+                                <p class="data">02/10/2016</p>
+                            </div>
+                        </div>
+                        <div class="triangle">
+                            <div></div>
+                        </div>
+                        <div class="person-foto">
+                            <img src="img/persona-1.png" alt="Bill and tom">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4 ">
+                        <div class="bg-intensive">
+                            <p>“ Olé is a good language school in order to learn Spanish fast and easily, but also to get to know a lot of people. Olé seems like a melting pot of many people who all have the same goal: to learn Spanish.”</p>
+                            <p class="city">Germany</p>
+                            <p class="age">21 years Old</p>
+                            <div class="row">
+                                <p class="name bold">Bill and tom</p>
+                                <p class="data">02/10/2016</p>
+                            </div>
+                        </div>
+                        <div class="triangle">
+                            <div></div>
+                        </div>
+                        <div class="person-foto">
+                            <img src="img/persona-2.png" alt="Bill and tom">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-4">
+                        <div class="bg-intensive">
+                            <p>“ Olé is a good language school in order to learn Spanish fast and easily, but also to get to know a lot of people. Olé seems like a melting pot of many people who all have the same goal: to learn Spanish.”</p>
+                            <p class="city">Germany</p>
+                            <p class="age">21 years Old</p>
+                            <div class="row">
+                                <p class="name bold">Bill and tom</p>
+                                <p class="data">02/10/2016</p>
+                            </div>
+                        </div>
+                        <div class="triangle">
+                            <div></div>
+                        </div>
+                        <div class="person-foto">
+                            <img src="img/persona-3.png" alt="Bill and tom">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 del">
+                        <div class="bg-intensive">
+                            <p>“ Olé is a good language school in order to learn Spanish fast and easily, but also to get to know a lot of people. Olé seems like a melting pot of many people who all have the same goal: to learn Spanish.”</p>
+                            <p class="city">Germany</p>
+                            <p class="age">21 years Old</p>
+                            <div class="row">
+                                <p class="name bold">Bill and tom</p>
+                                <p class="data">02/10/2016</p>
+                            </div>
+                        </div>
+                        <div class="triangle">
+                            <div></div>
+                        </div>
+                        <div class="person-foto">
+                            <img src="img/persona-3.png" alt="Bill and tom">
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
 
 
@@ -361,12 +601,15 @@
             </div>
         </footer>
     </div>
-    <div class="park-guell"></div>
     <a href="" class="help-chat">
         <div class="bocadilo">Any question? Ask us!</div>
         <div class="chat-icon"></div>
     </a>
-   
+
+<script>
+    var calendar = new Calendar();
+    calendar.print();
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/theme.js"></script>
