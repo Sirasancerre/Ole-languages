@@ -93,6 +93,11 @@ h5 {
 .button.white:hover {
   border: 1px solid #aaa;
 }
+.button.btn-block-max {
+  display: block;
+  width: 257px;
+  text-decoration: none;
+}
 .first .navbar {
   border: 0;
 }
@@ -230,6 +235,9 @@ h5 {
   float: left;
   display: block;
 }
+.second-nav > li:nth-child(1).active {
+  border-radius: 50px 0 0 50px;
+}
 .second-nav > li.active {
   background: #FF5A5F;
 }
@@ -252,7 +260,6 @@ h5 {
   position: absolute;
   border-radius: 30px;
   padding-left: 0;
-  overflow: hidden;
 }
 .second-nav .dropdown-toggle > img {
   width: 20px;
@@ -374,13 +381,41 @@ h5 {
 .courses .fr,
 .courses .sc,
 .courses .th,
-.courses .fo {
+.courses .fo,
+.courses .fi,
+.courses .sx {
   padding: 0;
+  display: block;
+  text-decoration: none;
+}
+.courses .fr .inline-h,
+.courses .sc .inline-h,
+.courses .th .inline-h,
+.courses .fo .inline-h,
+.courses .fi .inline-h,
+.courses .sx .inline-h,
+.courses .fr h4,
+.courses .sc h4,
+.courses .th h4,
+.courses .fo h4,
+.courses .fi h4,
+.courses .sx h4,
+.courses .fr h3,
+.courses .sc h3,
+.courses .th h3,
+.courses .fo h3,
+.courses .fi h3,
+.courses .sx h3 {
+  position: relative;
+  border-radius: 2px;
+  padding: 0 10px;
 }
 .courses .fr .content,
 .courses .sc .content,
 .courses .th .content,
-.courses .fo .content {
+.courses .fo .content,
+.courses .fi .content,
+.courses .sx .content {
   height: 287px;
   background-position: center;
   background-repeat: no-repeat;
@@ -388,14 +423,39 @@ h5 {
   margin: 15px;
   position: relative;
 }
+.courses .fr .content .plus,
+.courses .sc .content .plus,
+.courses .th .content .plus,
+.courses .fo .content .plus,
+.courses .fi .content .plus,
+.courses .sx .content .plus {
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  position: relative;
+  width: 62px;
+  height: 62px;
+  border: 2px solid #fff;
+  color: #fff;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 50px;
+  font-weight: 700;
+  border-radius: 50%;
+  padding-top: 16px;
+}
 .courses .fr .content h3,
 .courses .sc .content h3,
 .courses .th .content h3,
 .courses .fo .content h3,
+.courses .fi .content h3,
+.courses .sx .content h3,
 .courses .fr .content h4,
 .courses .sc .content h4,
 .courses .th .content h4,
-.courses .fo .content h4 {
+.courses .fo .content h4,
+.courses .fi .content h4,
+.courses .sx .content h4 {
   background: #fff;
   display: inline;
   line-height: 34px;
@@ -403,20 +463,97 @@ h5 {
 .courses .fr .content .inline-h,
 .courses .sc .content .inline-h,
 .courses .th .content .inline-h,
-.courses .fo .content .inline-h {
+.courses .fo .content .inline-h,
+.courses .fi .content .inline-h,
+.courses .sx .content .inline-h {
   padding-top: 100px;
+}
+.courses .fr .content .blackout,
+.courses .sc .content .blackout,
+.courses .th .content .blackout,
+.courses .fo .content .blackout,
+.courses .fi .content .blackout,
+.courses .sx .content .blackout {
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #4E535C;
+  opacity: 0;
+}
+.courses .fr:hover .blackout,
+.courses .sc:hover .blackout,
+.courses .th:hover .blackout,
+.courses .fo:hover .blackout,
+.courses .fi:hover .blackout,
+.courses .sx:hover .blackout {
+  opacity: 0.3;
+}
+.courses .fr:hover .plus,
+.courses .sc:hover .plus,
+.courses .th:hover .plus,
+.courses .fo:hover .plus,
+.courses .fi:hover .plus,
+.courses .sx:hover .plus {
+  color: #7E99C9;
+  background: #fff;
+}
+.courses .fr:hover .cost {
+  background: #7E99C9;
+}
+.courses .fr:hover .cost:after {
+  border-left-color: #7E99C9;
 }
 .courses .fr .content {
   background-image: url(../img/Intensive-spanish-course.png);
 }
+.courses .sc:hover .cost {
+  background: #36D7B7;
+}
+.courses .sc:hover .cost:after {
+  border-left-color: #36D7B7;
+}
 .courses .sc .content {
   background-image: url(../img/semi-intensive-course.png);
+}
+.courses .th:hover .cost {
+  background: #F5A623;
+}
+.courses .th:hover .cost:after {
+  border-left-color: #F5A623;
 }
 .courses .th .content {
   background-image: url(../img/evening-spanish-course.png);
 }
+.courses .fo:hover .cost {
+  background: #A991C7;
+}
+.courses .fo:hover .cost:after {
+  border-left-color: #A991C7;
+}
 .courses .fo .content {
   background-image: url(../img/dele-preparation-course.png);
+}
+.courses .fi:hover .cost {
+  background: #F8E71C;
+}
+.courses .fi:hover .cost:after {
+  border-left-color: #F8E71C;
+}
+.courses .fi .content {
+  background-image: url(../img/evening_cours.png);
+}
+.courses .sx:hover .cost {
+  background: #DB0A5B;
+}
+.courses .sx:hover .cost:after {
+  border-left-color: #DB0A5B;
+}
+.courses .sx .content {
+  background-image: url(../img/20.png);
 }
 .courses .cost {
   position: absolute;
@@ -425,6 +562,8 @@ h5 {
   background: #4A4A4A;
   padding: 8px;
   top: 40px;
+  -webkit-transition: all .3s;
+          transition: all .3s;
 }
 .courses .cost div {
   display: inline-block;
@@ -434,13 +573,22 @@ h5 {
   font-size: 24px;
 }
 .courses .cost:after {
+  -webkit-transition: all .3s;
+          transition: all .3s;
   content: " ";
-  background: url(../img/Rectangle.svg);
-  width: 16px;
-  height: 42px;
+  /* background: url(../img/Rectangle.svg); */
+  border: 21px solid transparent;
+  border-left: 21px solid #4a4a4a;
+  /* width: 23px; */
+  /* height: 42px; */
+  /* top: 0; */
   position: absolute;
   top: 0;
-  right: -15px;
+  bottom: 0;
+  right: -31px;
+  -webkit-transform: scaleX(0.5);
+      -ms-transform: scaleX(0.5);
+          transform: scaleX(0.5);
 }
 .courses .sale {
   width: 200px;

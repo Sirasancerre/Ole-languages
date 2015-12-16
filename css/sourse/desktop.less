@@ -75,8 +75,15 @@
     }
 }
 .courses {
-    .fr,.sc,.th,.fo {
+    .fr,.sc,.th,.fo,.fi,.sx {
         padding: 0;
+        display: block;
+        text-decoration: none;
+        .inline-h, h4, h3 {
+            position: relative;
+            border-radius: 2px;
+            padding: 0 10px;
+        }
         .content {
             height: 287px;
             background-position:  center;
@@ -84,6 +91,21 @@
             background-size: cover;
             margin: 15px;
             position: relative;
+            .plus {
+                transition: all .3s;
+                position: relative;
+                width: 62px;
+                height: 62px;
+                border: 2px solid #fff;
+                color: #fff;
+                left: 0;
+                right: 0;
+                margin: auto;
+                font-size: 50px;
+                font-weight: 700;
+                border-radius: 50%;
+                padding-top: 16px;
+            }
             h3, h4 {
                 background: #fff;
                 display: inline;
@@ -92,12 +114,79 @@
             .inline-h {
                 padding-top: 100px;
             }
+            .blackout {
+                transition: all .3s;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                background: #4E535C;
+                opacity: 0;
+            }
+        }
+        &:hover {
+            .blackout {opacity: .3}
+            .plus {color: #7E99C9; background: #fff;}
         }
     }
-    .fr .content {background-image: url(../img/Intensive-spanish-course.png)}
-    .sc .content {background-image: url(../img/semi-intensive-course.png)}
-    .th .content {background-image: url(../img/evening-spanish-course.png)}
-    .fo .content {background-image: url(../img/dele-preparation-course.png)}
+    .fr {
+        &:hover {
+            .cost {
+                background: #7E99C9;
+                &:after {
+                    border-left-color: #7E99C9;
+                }
+            }
+        }
+        .content {background-image: url(../img/Intensive-spanish-course.png)}
+    }
+    .sc {
+        &:hover .cost {
+            background: #36D7B7;
+            &:after {
+                border-left-color: #36D7B7;
+            }
+        }
+        .content {background-image: url(../img/semi-intensive-course.png)}
+    }
+    .th {
+        &:hover .cost {
+            background: #F5A623;
+            &:after {
+                border-left-color: #F5A623;
+            }
+        }
+        .content {background-image: url(../img/evening-spanish-course.png)}
+    }
+    .fo {
+        &:hover .cost {
+            background: #A991C7;
+            &:after {
+                border-left-color: #A991C7;
+            }
+        }
+        .content {background-image: url(../img/dele-preparation-course.png)}
+    }
+    
+    .fi {
+        &:hover .cost {
+            background: #F8E71C;
+            &:after {
+                border-left-color: #F8E71C;
+            }
+        }
+        .content {background-image: url(../img/evening_cours.png)}
+    }
+    .sx {
+        &:hover .cost {
+            background: #DB0A5B;
+            &:after {
+                border-left-color: #DB0A5B;
+            }
+        }
+        .content {background-image: url(../img/20.png)}
+    }
     .cost {
         position: absolute;
         height: 42px;
@@ -105,6 +194,7 @@
         background: #4A4A4A;
         padding: 8px;
         top: 40px;
+        transition: all .3s;
         div{
             display: inline-block;
         }
@@ -113,13 +203,19 @@
             font-size: 24px;
         }
         &:after {
+            transition: all .3s;
             content: " ";
-            background: url(../img/Rectangle.svg);
-            width: 16px;
-            height: 42px;
+            /* background: url(../img/Rectangle.svg); */
+            border: 21px solid transparent;
+            border-left: 21px solid #4a4a4a;
+            /* width: 23px; */
+            /* height: 42px; */
+            /* top: 0; */
             position: absolute;
             top: 0;
-            right: -15px;
+            bottom: 0;
+            right: -31px;
+            transform: scaleX(0.5);
         }
     }
     .sale {

@@ -97,6 +97,11 @@ h5 {
             border: 1px solid #aaa;
         }
     }
+    &.btn-block-max {
+        display: block;
+        width: 257px;
+        text-decoration: none;
+    }
 }
 
 // ================= Navbar ====================
@@ -241,6 +246,10 @@ h5 {
     
     float: left;
     display: block;
+    
+    &:nth-child(1).active {
+        border-radius: 50px 0 0 50px;
+    }
     &.active {
         background: #FF5A5F;
         a {
@@ -266,7 +275,6 @@ h5 {
     position: absolute;
     border-radius: 30px;
     padding-left: 0;
-    overflow: hidden;
     .dropdown-toggle > img {
         width: 20px;
         height: 12px;        
