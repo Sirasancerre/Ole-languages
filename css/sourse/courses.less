@@ -73,3 +73,24 @@ menu {
         display: none;
     }
 }
+@media all and (max-width: 540px) {
+    .active {
+        a.content {
+            display: none!important;
+        }
+        .full-desc {            
+            position: relative!important;
+            background: none!important;
+            z-index: 0!important;
+            margin-bottom: 0!important;
+            overflow: auto!important;
+            top: 0!important;
+        }
+        .full-desc-block {
+            margin: 15px!important;
+            box-shadow: none!important;
+            width: auto!important;
+            border: 1px solid #D8D8D8;
+        }
+    }
+}

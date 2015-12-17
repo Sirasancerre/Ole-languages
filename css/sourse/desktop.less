@@ -168,13 +168,25 @@
                 
             }
             .pish {
-                margin-left: 30px;
-                margin-right: 30px;
+                margin-left: 18px;
+                margin-right: 18px;
             }
+        }
+        div.day0 div, div.day1 div, div.weekend div {
+            width: 21px;
+            height: 21px;
+            display: block;
+            float: left;
+            margin-right: 7px;
+        }
+        div.day1 div {
+            border: 2px solid #F3474F;
+            border-radius: 50%;
         }
     }
     .full-desc {display: none}
     .fr,.sc,.th,.fo,.fi,.sx {
+        text-decoration: none!important;
         padding: 0;
         display: block;
         .inline-h, h4, h3 {
@@ -197,7 +209,7 @@
         }
         .content {
             display: block;
-            text-decoration: none;
+            text-decoration: none!important;
             height: 287px;
             background-position:  center;
             background-repeat:  no-repeat;
@@ -268,6 +280,12 @@
             fill: @fr-color;
             fill-rule: evenodd;
         }
+        div.day0 div {
+            background: @fr-color;
+        }
+        div.weekend div {
+            background: @fr-color-2;
+        }
     }
     .sc {
         @fr-color: #36D7B7;
@@ -293,6 +311,12 @@
         .plus-fill {
             fill: @fr-color;
             fill-rule: evenodd;
+        }
+        div.day0 div {
+            background: @fr-color;
+        }
+        div.weekend div {
+            background: @fr-color-2;
         }
     }
     .th {
@@ -320,6 +344,12 @@
             fill: @fr-color;
             fill-rule: evenodd;
         }
+        div.day0 div {
+            background: @fr-color;
+        }
+        div.weekend div {
+            background: @fr-color-2;
+        }
     }
     .fo {
         @fr-color: #A991C7;
@@ -345,6 +375,12 @@
         .plus-fill {
             fill: @fr-color;
             fill-rule: evenodd;
+        }
+        div.day0 div {
+            background: @fr-color;
+        }
+        div.weekend div {
+            background: @fr-color-2;
         }
     }
     
@@ -373,6 +409,12 @@
             fill: @fr-color;
             fill-rule: evenodd;
         }
+        div.day0 div {
+            background: @fr-color;
+        }
+        div.weekend div {
+            background: @fr-color-2;
+        }
     }
     .sx {
         @fr-color: #DB0A5B;
@@ -398,6 +440,12 @@
         .plus-fill {
             fill: @fr-color;
             fill-rule: evenodd;
+        }
+        div.day0 div {
+            background: @fr-color;
+        }
+        div.weekend div {
+            background: @fr-color-2;
         }
     
     }

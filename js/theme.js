@@ -4,7 +4,12 @@ $(document).ready(function() {
         $('.navbar-toggle').toggleClass('navbar-toggle-visible');
         $('.mobile-menu-wrapper').toggleClass('mobile-menu-wrapper--visible');
 })});
-
+$(function() {
+         $(".courses .cosede").click(function() {
+             $(this).removeClass("active");         
+             $(this).toggleClass("active");
+         })
+    });
 window.addEventListener("scroll", reload);
 function reload()
 {

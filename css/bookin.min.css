@@ -1,0 +1,250 @@
+.bookin-white-block {
+  background: #fff;
+  border: 1px solid #E1E5E5;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(233, 231, 231, 0.5);
+  margin: 20px 0;
+}
+.bookin-white-block-in {
+  border-bottom: 1px solid #E1E5E5;
+  padding: 20px;
+}
+.bookin-white-block-in .btn {
+  display: none;
+}
+.block-blue-back.active {
+  background: #F3F8FF;
+}
+.block-blue-back.active .btn {
+  display: inline-block;
+}
+.bookin-title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #696C6F;
+}
+.bookin-block-bottom {
+  color: #696C6F;
+  font-weight: 700;
+  background: #EEEEEE;
+  width: 100%;
+  text-align: center;
+  border: 0;
+  line-height: 50px;
+}
+.form-horizontal .form-group {
+  margin-left: 0;
+  margin-right: 0;
+}
+.form-control {
+  color: #696C6F;
+}
+.form-control[disabled] {
+  color: #9B9B9B;
+}
+.btn {
+  border-radius: 2px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 8px 12px;
+  border: 0;
+}
+.btn.big {
+  height: 49px;
+}
+.btn-block + .btn-block {
+  margin-top: 15px;
+}
+.padd {
+  padding: 30px 20px;
+}
+.padd h3 {
+  font-weight: 400;
+  margin-top: 0;
+}
+.btn-no-def {
+  width: 116px;
+}
+.btn-default {
+  background-color: #F1F1F1;
+  border-bottom: 2px solid #ACACAC;
+  color: #696C6F;
+}
+.btn-primary {
+  background-color: #4A90E2;
+  border-bottom: 2px solid #29588F;
+}
+.delete-block {
+  position: relative;
+}
+.delete-block:hover .trash {
+  opacity: 1;
+}
+.delete-block .title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.delete-block .title i {
+  margin-right: 10px;
+  margin-top: -3px;
+}
+.delete-block p {
+  color: #696C6F;
+  margin-bottom: 0;
+}
+.delete-block .trash {
+  -webkit-transition: opacity .3s;
+          transition: opacity .3s;
+  opacity: 0;
+  background-color: transparent;
+  border: 0;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+  font-size: 21px;
+}
+.delete-block .trash:hover {
+  color: #FF5A5F;
+}
+.block-orange-border label {
+  background: #EEE;
+  padding: 0 10px 0 30px;
+  border-radius: 6px;
+  margin-top: -4px !important;
+}
+.block-orange-border label input {
+  margin-top: 6px;
+}
+.block-orange-border .need {
+  display: none;
+  margin-left: 50px;
+  color: #696C6F;
+}
+.block-orange-border .need label {
+  background: none;
+}
+.block-orange-border .need p {
+  margin-bottom: 0;
+  margin-top: 30px;
+}
+.block-orange-border .notif {
+  background: #FFF9DE;
+  color: #B5871A;
+  padding: 20px;
+  font-size: 14px;
+  display: none;
+}
+.block-orange-border span.right {
+  float: right;
+  text-align: right;
+}
+.block-orange-border button {
+  display: none;
+}
+.block-orange-border .red {
+  color: #FF5A5F;
+}
+.block-orange-border.active {
+  border: 2px solid #DBB755;
+}
+.block-orange-border.active button,
+.block-orange-border.active .notif,
+.block-orange-border.active .need {
+  display: block;
+}
+.block-orange-border.active input,
+.block-orange-border.active select {
+  border: 2px solid #dbb755;
+}
+.block-3 {
+  position: relative;
+}
+.block-3 label {
+  background: #EEE;
+  padding: 0 10px 0 30px;
+  border-radius: 6px;
+  margin-top: -4px !important;
+}
+.block-3 label input {
+  margin-top: 6px;
+}
+.block-3 .need {
+  display: none;
+  margin-left: 80px;
+}
+.block-3 .need p {
+  margin: 30px 0;
+}
+.block-3 .need p.light {
+  font-size: 12px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.block-3 .need a {
+  color: #F7614B;
+}
+.block-3 .need input {
+  border: 2px solid #ccc;
+  box-shadow: none;
+}
+.block-3 img {
+  width: 65px;
+  position: absolute;
+  left: 25px;
+}
+.block-3.active .need {
+  display: block;
+}
+.bookin-transparent-block {
+  border-bottom: 2px solid #DEDEDF;
+}
+.bookin-transparent-block h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 20px 0;
+  color: #696C6F;
+}
+.bookin-transparent-block h5 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #696C6F;
+  margin-left: 5px;
+}
+.bookin-transparent-block p {
+  color: #696C6F;
+  margin-bottom: 0px;
+}
+.bookin-transparent-block .right {
+  text-align: right;
+  float: right;
+}
+.bookin-transparent-block .cost-right {
+  font-size: 16px;
+  font-weight: 700;
+  color: #696C6F;
+  text-align: right;
+}
+.bookin-transparent-block .gray-block {
+  background: #E7E7E7;
+  border-radius: 2px;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+.bookin-transparent-block .title-o {
+  margin-top: 20px;
+}
+data i {
+  margin-right: 5px;
+}
+.media-body p.light {
+  color: #A2A2A2;
+  font-size: 12px;
+}
+.media-body h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+i {
+  margin-right: 5px;
+}
