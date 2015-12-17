@@ -2,10 +2,74 @@
   width: 29px;
   height: 33px;
 }
-.steps .button {
+.steps2 .button {
   background: #fff;
   color: #F96B6F;
 }
-.steps .button:hover {
+.steps2 .button:hover {
   background: #eee;
+}
+menu {
+  background: #fff;
+  height: 48px;
+  margin: 0;
+}
+menu ul {
+  list-style: none;
+  margin: 0;
+}
+menu ul li {
+  float: left;
+  margin: 0 15px;
+}
+menu ul li a {
+  display: block;
+  line-height: 45px;
+  color: #9B9B9B;
+  text-decoration: none!important;
+}
+menu ul li.active a {
+  color: #FF5A5F;
+  border-bottom: 3px solid #FF5A5F;
+}
+.steps2 {
+  background: #F96B6F;
+  position: relative;
+}
+.steps2 p,
+.steps2 h2,
+.steps2 h5 {
+  color: #fff!important;
+}
+.steps2 .round {
+  width: 160px;
+  height: 160px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.steps2 .round .step-1,
+.steps2 .round .step-2,
+.steps2 .round .step-3 {
+  width: 115px;
+  height: 95px;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+  right: 0;
+  margin: 30px auto;
+}
+.steps2 .round .step-1 {
+  background-image: url(../img/smile.png);
+}
+.steps2 .round .step-2 {
+  background-image: url(../img/icon_Check_white.png);
+}
+.steps2 .round .step-3 {
+  background-image: url(../img/icon_certificated.png);
+}
+@media all and (max-width: 991px) {
+  menu {
+    display: none;
+  }
 }
