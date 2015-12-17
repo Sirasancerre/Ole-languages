@@ -2,3 +2,74 @@
     width: 29px;
     height: 33px;
 }
+.steps2 .button {
+    background: #fff;
+    color: #F96B6F;
+    &:hover {
+        background: #eee;
+    }
+}
+
+menu {
+    background: #fff;
+    height: 48px;
+    margin: 0;
+    ul {
+        list-style: none;
+        margin: 0;
+        li {
+            float: left;
+            margin: 0 15px;
+            
+            a {
+                display: block;
+                line-height: 45px;
+                color: #9B9B9B;
+                text-decoration: none!important;
+            }
+            &.active {
+                a {
+                    color: #FF5A5F;
+                    border-bottom: 3px solid #FF5A5F;
+                }
+            }
+        }
+    }
+}
+.steps2 {
+    background: #F96B6F;
+    position: relative;
+    p, h2, h5 {
+        color: #fff!important;
+    }
+    .round {
+        width: 160px;
+        height: 160px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        .step-1, .step-2, .step-3 {
+            width: 115px;
+            height: 95px;
+            background-repeat: no-repeat;
+            background-position: center;
+            left: 0;
+            right: 0;
+            margin: 30px auto;
+        }
+        .step-1 {
+            background-image: url(../img/smile.png);
+        }
+        .step-2 {
+            background-image: url(../img/icon_Check_white.png);
+        }
+        .step-3 {
+            background-image: url(../img/icon_certificated.png)
+        }
+    }
+}
+@media all and (max-width: 991px) {
+    menu {
+        display: none;
+    }
+}

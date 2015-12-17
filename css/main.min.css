@@ -378,6 +378,110 @@ h5 {
 .first span.semibold {
   font-weight: 600;
 }
+.courses .active .full-desc {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background: rgba(74, 74, 74, 0.76);
+  text-align: left;
+  color: #696C6F;
+}
+.courses .active .full-desc .full-desc-block {
+  width: 456px;
+  left: 0;
+  right: 0;
+  margin: 150px auto;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(72, 74, 79, 0.5);
+}
+.courses .active .full-desc .content {
+  margin: 0;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+}
+.courses .active .full-desc h5,
+.courses .active .full-desc p {
+  color: #696C6F;
+}
+.courses .active .full-desc p {
+  margin-bottom: 30px;
+}
+.courses .active .full-desc a {
+  color: #FF5A5F;
+  cursor: pointer;
+}
+.courses .active .full-desc .light {
+  opacity: .36;
+}
+.courses .active .full-desc img.i1 {
+  width: 28px;
+  margin-right: 4px;
+}
+.courses .active .full-desc img.i2 {
+  width: 21px;
+  margin-right: 10px;
+}
+.courses .active .full-desc img.i3 {
+  width: 26px;
+  margin-right: 7px;
+}
+.courses .active .full-desc img.i4 {
+  width: 25px;
+  margin-right: 6px;
+}
+.courses .active .full-desc .cal {
+  border-radius: 2px;
+  padding: 30px 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  background: #EEEEEF;
+}
+.courses .active .full-desc .cal .calendar {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.courses .active .full-desc .gghnh {
+  margin: 20px 0;
+  position: relative;
+  background: #EEEEEF;
+  border-radius: 2px;
+  padding: 40px 20px;
+}
+.courses .active .full-desc .gghnh h5 {
+  margin-top: 0;
+  font-size: 15px;
+}
+.courses .active .full-desc .gghnh .dropdown-toggle {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.courses .active .full-desc .gghnh .btn-default {
+  border-color: #CFCFD5;
+  color: #BCBBBB;
+  font-size: 15px;
+  line-height: 26px;
+}
+.courses .active .full-desc .gghnh .cost {
+  padding: 8px 25px;
+  right: 0;
+  top: 72px;
+}
+.courses .active .full-desc .gghnh .cost:after {
+  right: auto;
+  left: -31px;
+  border-left: 21px solid transparent;
+  border-right-width: 21px;
+  border-right-style: solid;
+}
+.courses .active .full-desc .pish {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.courses .full-desc {
+  display: none;
+}
 .courses .fr,
 .courses .sc,
 .courses .th,
@@ -386,7 +490,6 @@ h5 {
 .courses .sx {
   padding: 0;
   display: block;
-  text-decoration: none;
 }
 .courses .fr .inline-h,
 .courses .sc .inline-h,
@@ -410,12 +513,42 @@ h5 {
   border-radius: 2px;
   padding: 0 10px;
 }
+.courses .fr svg,
+.courses .sc svg,
+.courses .th svg,
+.courses .fo svg,
+.courses .fi svg,
+.courses .sx svg {
+  width: 100%;
+  margin-top: 30px;
+}
+.courses .fr .button,
+.courses .sc .button,
+.courses .th .button,
+.courses .fo .button,
+.courses .fi .button,
+.courses .sx .button {
+  font-weight: 600;
+  font-size: 16px;
+}
+.courses .fr .button.white,
+.courses .sc .button.white,
+.courses .th .button.white,
+.courses .fo .button.white,
+.courses .fi .button.white,
+.courses .sx .button.white {
+  border: 1px solid #FF5A5F;
+  color: #FF5A5F;
+  margin-top: 10px;
+}
 .courses .fr .content,
 .courses .sc .content,
 .courses .th .content,
 .courses .fo .content,
 .courses .fi .content,
 .courses .sx .content {
+  display: block;
+  text-decoration: none;
   height: 287px;
   background-position: center;
   background-repeat: no-repeat;
@@ -484,76 +617,214 @@ h5 {
   background: #4E535C;
   opacity: 0;
 }
-.courses .fr:hover .blackout,
-.courses .sc:hover .blackout,
-.courses .th:hover .blackout,
-.courses .fo:hover .blackout,
-.courses .fi:hover .blackout,
-.courses .sx:hover .blackout {
+.courses .fr.active .blackout,
+.courses .sc.active .blackout,
+.courses .th.active .blackout,
+.courses .fo.active .blackout,
+.courses .fi.active .blackout,
+.courses .sx.active .blackout,
+.courses .fr .content:hover .blackout,
+.courses .sc .content:hover .blackout,
+.courses .th .content:hover .blackout,
+.courses .fo .content:hover .blackout,
+.courses .fi .content:hover .blackout,
+.courses .sx .content:hover .blackout {
   opacity: 0.3;
 }
-.courses .fr:hover .plus,
-.courses .sc:hover .plus,
-.courses .th:hover .plus,
-.courses .fo:hover .plus,
-.courses .fi:hover .plus,
-.courses .sx:hover .plus {
+.courses .fr.active .plus,
+.courses .sc.active .plus,
+.courses .th.active .plus,
+.courses .fo.active .plus,
+.courses .fi.active .plus,
+.courses .sx.active .plus,
+.courses .fr .content:hover .plus,
+.courses .sc .content:hover .plus,
+.courses .th .content:hover .plus,
+.courses .fo .content:hover .plus,
+.courses .fi .content:hover .plus,
+.courses .sx .content:hover .plus {
   color: #7E99C9;
   background: #fff;
 }
-.courses .fr:hover .cost {
-  background: #7E99C9;
+.courses .fr.active .gghnh .cost:after,
+.courses .fr .content:hover .gghnh .cost:after {
+  border-right-color: #7e99c9;
 }
-.courses .fr:hover .cost:after {
-  border-left-color: #7E99C9;
+.courses .fr.active .cost,
+.courses .fr .content:hover .cost,
+.courses .fr.active .calendar .spDay0,
+.courses .fr .content:hover .calendar .spDay0 {
+  background: #7e99c9;
+}
+.courses .fr.active .cost:after,
+.courses .fr .content:hover .cost:after,
+.courses .fr.active .calendar .spDay0:after,
+.courses .fr .content:hover .calendar .spDay0:after {
+  border-left-color: #7e99c9;
 }
 .courses .fr .content {
   background-image: url(../img/Intensive-spanish-course.png);
+  border-bottom-color: #7e99c9;
 }
-.courses .sc:hover .cost {
-  background: #36D7B7;
+.courses .fr .calendar .day-weekend {
+  background-color: #b1bbd8;
 }
-.courses .sc:hover .cost:after {
-  border-left-color: #36D7B7;
+.courses .fr .plus-stroke {
+  stroke: #7e99c9;
+}
+.courses .fr .plus-fill {
+  fill: #7e99c9;
+  fill-rule: evenodd;
+}
+.courses .sc.active .gghnh .cost:after,
+.courses .sc .content:hover .gghnh .cost:after {
+  border-right-color: #36d7b7;
+}
+.courses .sc.active .cost,
+.courses .sc .content:hover .cost,
+.courses .sc.active .calendar .spDay0,
+.courses .sc .content:hover .calendar .spDay0 {
+  background: #36d7b7;
+}
+.courses .sc.active .cost:after,
+.courses .sc .content:hover .cost:after,
+.courses .sc.active .calendar .spDay0:after,
+.courses .sc .content:hover .calendar .spDay0:after {
+  border-left-color: #36d7b7;
 }
 .courses .sc .content {
   background-image: url(../img/semi-intensive-course.png);
+  border-bottom-color: #36d7b7;
 }
-.courses .th:hover .cost {
-  background: #F5A623;
+.courses .sc .calendar .day-weekend {
+  background-color: #a4e9db;
 }
-.courses .th:hover .cost:after {
-  border-left-color: #F5A623;
+.courses .sc .plus-stroke {
+  stroke: #36d7b7;
+}
+.courses .sc .plus-fill {
+  fill: #36d7b7;
+  fill-rule: evenodd;
+}
+.courses .th.active .gghnh .cost:after,
+.courses .th .content:hover .gghnh .cost:after {
+  border-right-color: #f5a623;
+}
+.courses .th.active .cost,
+.courses .th .content:hover .cost,
+.courses .th.active .calendar .spDay0,
+.courses .th .content:hover .calendar .spDay0 {
+  background: #f5a623;
+}
+.courses .th.active .cost:after,
+.courses .th .content:hover .cost:after,
+.courses .th.active .calendar .spDay0:after,
+.courses .th .content:hover .calendar .spDay0:after {
+  border-left-color: #f5a623;
 }
 .courses .th .content {
   background-image: url(../img/evening-spanish-course.png);
+  border-bottom-color: #f5a623;
 }
-.courses .fo:hover .cost {
-  background: #A991C7;
+.courses .th .calendar .day-weekend {
+  background-color: #ffd48e;
 }
-.courses .fo:hover .cost:after {
-  border-left-color: #A991C7;
+.courses .th .plus-stroke {
+  stroke: #f5a623;
+}
+.courses .th .plus-fill {
+  fill: #f5a623;
+  fill-rule: evenodd;
+}
+.courses .fo.active .gghnh .cost:after,
+.courses .fo .content:hover .gghnh .cost:after {
+  border-right-color: #a991c7;
+}
+.courses .fo.active .cost,
+.courses .fo .content:hover .cost,
+.courses .fo.active .calendar .spDay0,
+.courses .fo .content:hover .calendar .spDay0 {
+  background: #a991c7;
+}
+.courses .fo.active .cost:after,
+.courses .fo .content:hover .cost:after,
+.courses .fo.active .calendar .spDay0:after,
+.courses .fo .content:hover .calendar .spDay0:after {
+  border-left-color: #a991c7;
 }
 .courses .fo .content {
   background-image: url(../img/dele-preparation-course.png);
+  border-bottom-color: #a991c7;
 }
-.courses .fi:hover .cost {
-  background: #F8E71C;
+.courses .fo .calendar .day-weekend {
+  background-color: #d4c1eb;
 }
-.courses .fi:hover .cost:after {
-  border-left-color: #F8E71C;
+.courses .fo .plus-stroke {
+  stroke: #a991c7;
+}
+.courses .fo .plus-fill {
+  fill: #a991c7;
+  fill-rule: evenodd;
+}
+.courses .fi.active .gghnh .cost:after,
+.courses .fi .content:hover .gghnh .cost:after {
+  border-right-color: #f8e71c;
+}
+.courses .fi.active .cost,
+.courses .fi .content:hover .cost,
+.courses .fi.active .calendar .spDay0,
+.courses .fi .content:hover .calendar .spDay0 {
+  background: #f8e71c;
+}
+.courses .fi.active .cost:after,
+.courses .fi .content:hover .cost:after,
+.courses .fi.active .calendar .spDay0:after,
+.courses .fi .content:hover .calendar .spDay0:after {
+  border-left-color: #f8e71c;
 }
 .courses .fi .content {
   background-image: url(../img/evening_cours.png);
+  border-bottom-color: #f8e71c;
 }
-.courses .sx:hover .cost {
-  background: #DB0A5B;
+.courses .fi .calendar .day-weekend {
+  background-color: #f1e87d;
 }
-.courses .sx:hover .cost:after {
-  border-left-color: #DB0A5B;
+.courses .fi .plus-stroke {
+  stroke: #f8e71c;
+}
+.courses .fi .plus-fill {
+  fill: #f8e71c;
+  fill-rule: evenodd;
+}
+.courses .sx.active .gghnh .cost:after,
+.courses .sx .content:hover .gghnh .cost:after {
+  border-right-color: #db0a5b;
+}
+.courses .sx.active .cost,
+.courses .sx .content:hover .cost,
+.courses .sx.active .calendar .spDay0,
+.courses .sx .content:hover .calendar .spDay0 {
+  background: #db0a5b;
+}
+.courses .sx.active .cost:after,
+.courses .sx .content:hover .cost:after,
+.courses .sx.active .calendar .spDay0:after,
+.courses .sx .content:hover .calendar .spDay0:after {
+  border-left-color: #db0a5b;
 }
 .courses .sx .content {
   background-image: url(../img/20.png);
+  border-bottom-color: #db0a5b;
+}
+.courses .sx .calendar .day-weekend {
+  background-color: #ffc2da;
+}
+.courses .sx .plus-stroke {
+  stroke: #db0a5b;
+}
+.courses .sx .plus-fill {
+  fill: #db0a5b;
+  fill-rule: evenodd;
 }
 .courses .cost {
   position: absolute;
@@ -1168,7 +1439,7 @@ footer select {
 }
 header {
   position: absolute;
-  z-index: 9999;
+  z-index: 11;
   top: 0;
   left: 0;
   right: 0;
@@ -1235,6 +1506,7 @@ header .second-nav {
   bottom: 0;
   left: 0;
   right: 0;
+  margin-bottom: -16px;
 }
 .scroll img {
   width: 21px;
@@ -1247,25 +1519,28 @@ header .second-nav {
   background-color: white;
 }
 .calendar td {
-  height: 40px;
-  width: 40px;
+  height: 42px;
+  width: 43px;
   text-align: center;
   vertical-align: middle;
   color: #626365;
-  font-family: Arial, serif;
-  background-color: white;
+  background-color: #FBFBFB;
+}
+.calendar .day- {
+  border: 1px solid #fff;
 }
 .calendar .prevMonth,
 .calendar .nextMonth {
   border-radius: 50%;
   background-color: white;
-  color: #626365;
+  color: #696C6F;
   font-weight: bold;
-  font-family: Arial, serif;
-  padding: 8px 11px;
+  padding: 3px 11px;
   border: none;
   font-size: 16px;
   text-decoration: none;
+  width: 30px;
+  height: 30px;
 }
 .calendar .prevMonth:focus,
 .calendar .prevMonth:active,
@@ -1279,14 +1554,13 @@ header .second-nav {
   color: #626365;
   font-size: 16px;
   font-weight: bold;
-  font-family: Arial, serif;
 }
-.calendar .weekend {
-  background-color: #D6DAE6;
+.calendar .day-weekend {
+  border: 1px solid #fff;
   color: white;
 }
 .calendar .spDay0 {
-  background-color: #7D99C8;
+  border: 1px solid #fff;
   color: white;
 }
 .calendar .first-row {
