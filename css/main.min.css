@@ -98,6 +98,12 @@ h5 {
   width: 257px;
   text-decoration: none;
 }
+.padding-left-null {
+  padding-left: 0;
+}
+.padding-right-null {
+  padding-right: 0;
+}
 .first .navbar {
   border: 0;
 }

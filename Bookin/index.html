@@ -247,10 +247,73 @@ and calculate the total price of your stay at Olé languages</p>
                         </div>
                         <button class="bookin-block-bottom">+ Add a Course</button>
                     </div>
-                    <div class="bookin-white-block block-orange-border active"> <!-- Can be active-->
+                    <div class="bookin-white-block">
+                        <div class="bookin-white-block-in delete-block">
+                            <p class="title"><i class="fa fa-graduation-cap"></i>Intensive Course</p>
+                            <p>From day 12.10.2015</p>
+                            <p>To day 18.10.2015</p>
+                            <button class="trash"><i class="fa fa-trash-o"></i></button>
+                        </div>
+                        <div class="bookin-white-block-in">
+                            <h5 class="bookin-title">No active</h5>
+                        </div>
+                        <div class="bookin-white-block-in block-blue-back">
+                           
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <select class="form-control">
+                                      <option>Did you study spanish before? *</option>
+                                      <option>Yes. I’m not an absolute beginner                           </option>
+                                      <option>No. I’m an absolute beginner                                  </option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" disabled>
+                                      <option>Please, choose a course *</option>
+                                      <option>Intensive Spanish Course ( 20 Lessons/ Week )</option>
+                                      <option>Semi Intensive Spanish Course ( 10 Lessons/ Week )</option>
+                                      <option>Evening spanish Course ( 4 Lessons/ Week )</option>
+                                      <option>DELE Preparation Course  ( 20 Lessons/ Week )</option>
+                                      <option>Private lessons ( 1 to 20 Lessons/ Week )</option>
+                                      <option>Conversation Classes  ( + 5 Lessons/ Week )</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="date" class="form-control" placeholder="Start day *" disabled>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" disabled>
+                                      <option>Duration *</option>
+                                      <option>1 week</option>
+                                      <option>2 week</option>
+                                      <option>3 week</option>
+                                      <option>4 week</option>
+                                      <option>5 week</option>
+                                      <option>6 week</option>
+                                      <option>7 week</option>
+                                      <option>8 week</option>
+                                      <option>9 week</option>
+                                      <option>10 week</option>
+                                      <option>11 week</option>
+                                      <option>12 week</option>
+                                      <option>13 week</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+<button type="button" class="btn btn-no-def btn-primary">Save</button>
+<button type="button" class="btn btn-no-def btn-default">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                        <button class="bookin-block-bottom">+ Add a Course</button>
+                    </div>
+                    <div class="bookin-white-block label-title block-orange-border active"> <!-- Can be active-->
                         <div class="notif">Please, if you need an accomodation, choose a type and let us know your stay date </div>
                         <div class="bookin-white-block-in ">
                             <h5 class="bookin-title">Accomodation selection</h5>
+                        </div>
+                        <div class="bookin-white-block-in ">
                             <p>I 
                                 <label class="radio-inline">
                                   <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> need
@@ -333,11 +396,13 @@ and calculate the total price of your stay at Olé languages</p>
                         </div>
                         <button class="bookin-block-bottom">+ Add a Course</button>
                     </div>
-                    <div class="bookin-white-block block-orange-border active">
+                    <div class="bookin-white-block label-title block-orange-border active">
                         <div class="notif">Please, if you need Additional services, select the ones that 
 interest you.</div>
                         <div class="bookin-white-block-in">
                             <h5 class="bookin-title">Additional Services selection</h5>
+                        </div>
+                        <div class="bookin-white-block-in">
                             <p>I 
                                 <label class="radio-inline">
                                   <input type="radio" name="inlineRadioOptions2" id="inlineRadio2-1" value="option1"> need
@@ -372,9 +437,116 @@ interest you.</div>
                         </div>
                         <button class="bookin-block-bottom">+ Add a Course</button>
                     </div>
+                    <div class="bookin-white-block label-title block-orange-border">
+                        <div class="notif">Please, if you need Additional services, select the ones that 
+interest you.</div>
+                        <div class="bookin-white-block-in">
+                            <h5 class="bookin-title">Additional Services selection</h5>
+                        </div>
+                        <div class="bookin-white-block-in">
+                            <p>I 
+                                <label class="radio-inline">
+                                  <input type="radio" name="inlineRadioOptions2" id="inlineRadio2-1" value="option1"> need
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="inlineRadioOptions2" id="inlineRadio2-2" value="option2" checked> do not need
+                                </label>
+                                an accomodation <span class="red">*</span>
+                            </p>
+                        </div>
+                        <div class="bookin-white-block-in block-blue-back active" style="display: none">
+                            <div class="need">
+                              <p>Airport Transfer</p>
+                               <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios2" id="optionsRadios2-1" value="option1">From the airport ( 50€ )
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios2" id="optionsRadios2-2" value="option2">To the airport ( 50€ )
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="optionsRadios2-2" id="optionsRadios3" value="option3">From/to the airport ( 90 € )</label>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-no-def btn-primary">Save</button>
+                                    <button type="button" class="btn btn-no-def btn-default">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="bookin-block-bottom">+ Add a Course</button>
+                    </div>
+                    <div class="bookin-white-block label-title block-orange-border active">
+                        <div class="notif">Please, if you need Additional services, select the ones that 
+interest you.</div>
+                        <div class="bookin-white-block-in">
+                            <h5 class="bookin-title">Additional Services selection</h5>
+                        </div>
+                        <div class="bookin-white-block-in">
+                            <p>I 
+                                <label class="radio-inline">
+                                  <input type="radio" name="inlineRadioOptions2" id="inlineRadio2-1" value="option1"> need
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="inlineRadioOptions2" id="inlineRadio2-2" value="option2" checked> do not need
+                                </label>
+                                an accomodation <span class="red">*</span>
+                            </p>
+                        </div>
+                        <div class="bookin-white-block-in block-blue-back">
+                            <div class="need">
+                              <p>Airport Transfer</p>
+                               <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios2" id="optionsRadios2-1" value="option1">From the airport ( 50€ )
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label>
+                                    <input type="radio" name="optionsRadios2" id="optionsRadios2-2" value="option2">To the airport ( 50€ )
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label><input type="radio" name="optionsRadios2-2" id="optionsRadios3" value="option3">From/to the airport ( 90 € )</label>
+                                </div>
+                                <div class="form-group">
+                                    <button type="button" class="btn btn-no-def btn-primary">Save</button>
+                                    <button type="button" class="btn btn-no-def btn-default">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="bookin-block-bottom">+ Add a Course</button>
+                    </div>
                     <div class="bookin-white-block block-3 active">
                         <div class="bookin-white-block-in">
                             <h5 class="bookin-title">Promotion code (Let’s be amigos)</h5>
+                        </div>
+                        <div class="bookin-white-block-in">
+                            <p>I 
+                                <label class="radio-inline">
+                                  <input type="radio" name="inlineRadioOptions3" id="inlineRadio3-1" value="option1"> have
+                                </label>
+                                <label class="radio-inline">
+                                  <input type="radio" name="inlineRadioOptions3" id="inlineRadio3-2" value="option2" checked> do not have
+                                </label>
+                                a promotion code
+                            </p>
+                            <div class="need">
+                              <img src="img/-5.png" alt="-5%">
+                               <p><strong>Let’s be amigos</strong>  If a friend recommended Olé Languages to you and you would like to receive a 5% discount on the Spanish course of your choice, please put your friend’s 
+8-digit promotion code in the box below</p>
+                                <input type="text" class="form-control" placeholder="00000000">
+                                <p class="light">More info on our Let’s Be Amigos promotion <a href="">here</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bookin-white-block block-3">
+                        <div class="bookin-white-block-in">
+                            <h5 class="bookin-title">Promotion code (Let’s be amigos)</h5>
+                        </div>
+                        <div class="bookin-white-block-in">
                             <p>I 
                                 <label class="radio-inline">
                                   <input type="radio" name="inlineRadioOptions3" id="inlineRadio3-1" value="option1"> have

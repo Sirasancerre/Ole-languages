@@ -1,19 +1,54 @@
+/*
+.bookin-white-block (+.active)
+                simble block
+                or with active-class (orange border, orange border in input-block)
+    .block-blue-back (+.active)
+                simple block (transparent background, padding)
+                or with active-class (blue background, border-top, border-bottom)
+        .bookin-title
+    .bookin-white-block-in - block (white background, padding)
+    .bookin-block-bottom - Button (gray background, padding)
+
+.bookin-transparent-block
+    .gray-block
+*/
+a {
+  color: #FF5A5F;
+}
+a:hover {
+  color: #ff333a;
+}
+.form-control {
+  border: 2px solid #CCC;
+  box-shadow: none;
+}
+.form-control:focus {
+  border: 2px solid #4A90E2!important;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}
 .bookin-white-block {
+  color: #696C6F;
   background: #fff;
   border: 1px solid #E1E5E5;
   border-radius: 2px;
   box-shadow: 0 2px 4px rgba(233, 231, 231, 0.5);
   margin: 20px 0;
 }
+/*
+.bottom-border {
+    border-bottom: 1px solid #E1E5E5;
+}
+*/
 .bookin-white-block-in {
-  border-bottom: 1px solid #E1E5E5;
   padding: 20px;
 }
-.bookin-white-block-in .btn {
+.block-blue-back .btn {
   display: none;
 }
 .block-blue-back.active {
   background: #F3F8FF;
+  border-bottom: 1px solid #E1E5E5;
+  border-top: 1px solid #E1E5E5;
 }
 .block-blue-back.active .btn {
   display: inline-block;
@@ -22,6 +57,7 @@
   font-weight: 700;
   font-size: 18px;
   color: #696C6F;
+  margin-bottom: -15px;
 }
 .bookin-block-bottom {
   color: #696C6F;
@@ -74,7 +110,14 @@
   background-color: #4A90E2;
   border-bottom: 2px solid #29588F;
 }
+.details {
+  padding-left: 30px;
+}
+.details p {
+  margin-bottom: 0;
+}
 .delete-block {
+  border-bottom: 1px solid #E1E5E5;
   position: relative;
 }
 .delete-block:hover .trash {
@@ -106,13 +149,13 @@
 .delete-block .trash:hover {
   color: #FF5A5F;
 }
-.block-orange-border label {
+.label-title label {
   background: #EEE;
   padding: 0 10px 0 30px;
   border-radius: 6px;
-  margin-top: -4px !important;
+  margin-bottom: 4px;
 }
-.block-orange-border label input {
+.label-title label input {
   margin-top: 6px;
 }
 .block-orange-border .need {
@@ -125,7 +168,6 @@
 }
 .block-orange-border .need p {
   margin-bottom: 0;
-  margin-top: 30px;
 }
 .block-orange-border .notif {
   background: #FFF9DE;
@@ -147,7 +189,6 @@
 .block-orange-border.active {
   border: 2px solid #DBB755;
 }
-.block-orange-border.active button,
 .block-orange-border.active .notif,
 .block-orange-border.active .need {
   display: block;
