@@ -12,11 +12,68 @@
 .bookin-transparent-block
     .gray-block
 */
-a {
+.bookin-white-block a {
   color: #FF5A5F;
 }
-a:hover {
+.bookin-white-block a:hover {
   color: #ff333a;
+}
+.menu-step {
+  background: #fff;
+  position: relative;
+  padding: 50px;
+}
+.menu-step a {
+  text-decoration: none;
+}
+.menu-step p {
+  color: #9B9B9B;
+  font-weight: 600;
+}
+.menu-step .row {
+  margin: 0;
+}
+.menu-step .round {
+  color: white;
+  width: 30px;
+  height: 30px;
+  margin: 20px auto;
+  left: 0;
+  right: 0;
+  border-radius: 50%;
+  padding-top: 2px;
+  background: #E1E5E5;
+}
+.menu-step .active {
+  color: #FF5A5F;
+}
+.menu-step .active .round {
+  background: #FF5A5F;
+}
+.menu-step .active p {
+  color: #FF5A5F;
+}
+.menu-step .next p {
+  font-weight: 400;
+}
+.menu-step:after {
+  background: #fff;
+}
+.menu-step:before {
+  content: "";
+  width: 60%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #E1E5E5;
+  margin: auto;
+  top: 85px;
+}
+@media all and (max-width: 540px) {
+  .menu-step {
+    display: none;
+  }
 }
 .form-control {
   border: 2px solid #CCC;
@@ -286,6 +343,25 @@ data i {
   font-weight: 400;
   margin: 0 0 12px;
 }
-i {
-  margin-right: 5px;
+#ex1Slider .slider-selection {
+  background: #FF5A5F;
+}
+.prepay h5 {
+  color: #696C6F;
+}
+.prepay .pay-now {
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  width: 210px;
+}
+.prepay .pay-now a {
+  color: #FF5A5F;
+  font-size: 12px;
+}
+.prepay .pay-now a span {
+  border: 2px solid #ff5a5f;
+  border-radius: 50%;
+  padding: 0 6px;
+  margin-left: 5px;
 }

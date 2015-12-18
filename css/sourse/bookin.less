@@ -12,10 +12,69 @@
 .bookin-transparent-block
     .gray-block
 */
-a {
+.bookin-white-block a {
     color: #FF5A5F;
     &:hover {
         color: #ff333a;
+    }
+}
+.menu-step {
+    background: #fff;
+    position: relative;
+    padding: 50px;
+    a {
+        text-decoration: none;
+    }
+    p {
+        color: #9B9B9B;
+        font-weight: 600;
+    }
+    .row {
+        margin: 0;
+    }
+    .round {
+        color: white;
+        width: 30px;
+        height: 30px;
+        margin: 20px auto;
+        left: 0;
+        right: 0;
+        border-radius: 50%;
+        padding-top: 2px;
+        background: #E1E5E5;
+    }
+    .active {
+        color: #FF5A5F;
+        .round {
+            background: #FF5A5F;
+        }
+        p {
+            color: #FF5A5F;
+        }
+    }
+    .next {
+        p {
+            font-weight: 400;
+        }
+    }
+    &:after {
+        background: #fff;
+    }
+    &:before {
+        content: "";
+        width: 60%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        background: #E1E5E5;
+        margin: auto;
+        top: 85px;
+    }
+}
+@media all and (max-width: 540px) {
+    .menu-step {
+        display: none;
     }
 }
 .form-control {
@@ -295,6 +354,27 @@ data {
     }
     
 }
-i {
-    margin-right: 5px;
+#ex1Slider .slider-selection {
+	background: #FF5A5F;
+}
+.prepay {
+    h5 {
+        color: #696C6F;
+    }
+    .pay-now {
+        left: 0;
+        right: 0;
+        margin: 20px auto;
+        width: 210px;
+        a {
+            color: #FF5A5F;
+            font-size: 12px;
+            span {
+                border: 2px solid #ff5a5f;
+                border-radius: 50%;
+                padding: 0 6px;
+                margin-left: 5px;
+            }
+        }
+    }
 }

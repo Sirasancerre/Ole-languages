@@ -1,9 +1,14 @@
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-<link rel="stylesheet" href="/css/main.min.css">
+<!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/main.min.css">
 <style>
     body {
         background: #ddd;
     }
+    
+    
+#ex1Slider .slider-selection {
+	background: #FF5A5F;
+}
 </style>
 <h1>Spanish courses in Barcelona</h1>
 <p class="slogan">Clases con profesores cualificados</p>
@@ -59,9 +64,20 @@
    <div class="bocadilo">Any question? Ask us!</div>
     <div class="chat-icon"></div>
 </a>
+<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="874" data-slider-step="1" data-slider-value="250"/>
 
 
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type='text/javascript' src="js/bootstrap-slider.js"></script>
+    <script type='text/javascript'>
+        var currency = '€';
+    	$(document).ready(function() {
+    		/* Example 1 */
+	    	$('#ex1').slider({
+	          	formatter: function(value) {
+	            	return value + ' ' + currency;
+	          	}
+	        });
+		});
+    </script>
 <script src="/js/bootstrap.min.js"></script>
