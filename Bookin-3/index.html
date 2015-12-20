@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <title>Ole Languages | Home</title>
     <base href="../">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+<!--    <link rel="stylesheet" href="css/bootstrap.min.css">-->
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/bookin.min.css">
 </head>
@@ -56,9 +56,9 @@
                         <li class="dropdown">
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
                           <ul class="dropdown-menu">
-                            <li><a href="#">Course Options</a></li>
-                            <li><a href="#">Methodology and levels</a></li>
-                            <li><a href="#">How to enroll</a></li>
+                            <li><a href="Courses/">Course Options</a></li>
+                            <li><a href="Courses#2">Methodology and levels</a></li>
+                            <li><a href="Courses#3">How to enroll</a></li>
                           </ul>
                         </li>
 
@@ -104,6 +104,7 @@
                 <h1>Book in 3 Steps</h1><br>
                 <p class="slogan">Lorem ipsum dolor sit amet, sit id diceret veritus, mundi possim.</p>
 <!-- ================================ Desktop menu ================================-->
+                
                 <nav class="clayBlock navbar navbar-theme" id="clayBlock" role="navigation">
                     <div class="container-fluid">
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -122,11 +123,11 @@
                             <li class="dropdown">
                               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
                               <ul class="dropdown-menu">
-                                <li><a href="#">Course Options</a></li>
+                                <li><a href="Courses/">Course Options</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">Methodology and levels</a></li>
+                                <li><a href="Courses#2">Methodology and levels</a></li>
                                 <li class="divider"></li>
-                                <li><a href="#">How to enroll</a></li>
+                                <li><a href="Courses#3">How to enroll</a></li>
                               </ul>
                             </li>
                             <li class="border"></li>
@@ -153,7 +154,7 @@
                                 <a href="Contact">Contact</a>
                             </li>
                             <li class="active">
-                                <a href="#">Book now</a>
+                                <a href="Bookin">Book now</a>
                             </li>
 
                           </ul>
@@ -163,7 +164,10 @@
 <!-- ================================ Desktop menu end ================================-->
             </div>
 <!-- ================================ Block ================================ -->
-            
+            <div class="message expect round-bottom text-center" style="display: block">
+                <h2><i class="fa fa-times-circle-o"></i>Payment Rejected</h2>
+                <p class="errores">Please, try again</p>
+            </div>
             <div class="menu-step text-center round-bottom">
                 <div class="row">
                     <div class="col-xs-4">
@@ -187,93 +191,97 @@
                     </div>
                 </div>
             </div>
+            <div class="message success round-bottom text-center" style="display: block">
+                <h2><i class="fa fa-check-circle-o"></i>Message sended</h2>
+            </div>
             <div class="row margin-bottom-null">
-                <div class="row testimonials left-to-center ">
-                    <div class="col-sm-6 col-sm-offset-4">
-                        <div class="media">
-                            <div class="media-left media-middle mass-icon">
-                                <img class="media-object" src="img/bookin-step-3.png" alt="Our Students say">
-                            </div>
-                            <div class="media-body our-stud">
-                                <h2 class="media-heading">Prepay your course</h2>
-                                <p>Thank you for signing online Amandine. </p>
-                            </div>
+                <div class="testimonials left-to-center">
+                    <div class="media media-center" style="max-width: 400px">
+                        <div class="media-left media-middle mass-icon">
+                            <img class="media-object" src="img/bookin-step-3.png" alt="Our Students say">
+                        </div>
+                        <div class="media-body our-stud">
+                            <h2 class="media-heading">Prepay your course</h2>
+                            <p>Thank you for signing online Amandine. </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-8 col-sm-offset-2">
-                  <div class="row prepay">
-                      <div class="col-xs-10 col-xs-offset-1 text-center">
-                         <h5>Choose an amount</h5>
-                         <p>   Now you have the option to choose an amount to pay by credit card, 
-which will book your course. The minimum deposit to pay is <strong>150 euros.</strong></p>
-                          <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="874" data-slider-step="1" data-slider-value="250"/>
-                          <div class="pay-now">
-                              <button type="submit" class="btn btn-default btn-block button red">Pay Now</button>
-                        <p>
-                        <a href="">Pay width cancelacion insurance<span>?</span></a>
-                        </p>
-                          </div>
-                        
-                      </div>
-                  </div>
-
-                   <div class="bookin-white-block">
-                   <div class="bookin-white-block-in">
-                    <div class="bookin-transparent-block">
-                        <h5>COURSE</h5>
-                        <p>1x Intensive Course</p>
-                        <p>Start day: <span class="right"><data><i class="fa fa-calendar-o"></i>12.10.2015</data></span></p>
-                        <p>Last day: <span class="right"><data><i class="fa fa-calendar-o"></i>18.10.2015</data></span></p>
-                        <p class="title-o">1x Semi-Intensive Course</p>
-                        <p>Start day: <span class="right"><data><i class="fa fa-calendar-o"></i>12.10.2015</data></span></p>
-                        <p>Last day: <span class="right"><data><i class="fa fa-calendar-o"></i>18.10.2015</data></span></p>
-                        <div class="gray-block">
-                            <div class="cost-right">360 EUR</div>
+                    <div class="row prepay">
+                        <div class="col-xs-10 col-xs-offset-1 text-center">
+                            <h5>Choose an amount</h5>
+                            <p>   Now you have the option to choose an amount to pay by credit card, 
+                            which will book your course. The minimum deposit to pay is <strong>150 euros.</strong></p>
+                            <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="874" data-slider-step="1" data-slider-value="250"/>
+                            <div class="pay-now">
+                                <button type="submit" class="btn btn-danger btn-block">Pay Now</button>
+                                <p>
+                                    <a href="">Pay width cancelacion insurance<span>?</span></a>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="bookin-transparent-block">
-                        <h5>ACCOMODATION</h5>
-                        <p>Type of Accomodation</p>
-                        <p>Start day: <span class="right"><data><i class="fa fa-calendar-o"></i>#</data></span></p>
-                        <p>Last day: <span class="right"><data><i class="fa fa-calendar-o"></i>#</data></span></p>
-                        
-                        <div class="gray-block">
-                            <div class="cost-right"># EUR</div>
-                        </div>
+                    <div class="row text-center">
+                        <div class="col-xs-10 col-xs-offset-1">
+                            <h2>Thank you!</h2>
+                            <p style="color: #696C6F"> Your prepayment of <strong>300€</strong> has been successful and your booking is now confirmed. A confirmation email has been sent to <strong>amandinecoster@gmail.com.</strong> If you do not receive a email from us, please check your spam folder or contact us.</p>
+                        </div> 
                     </div>
-                    <div class="bookin-transparent-block">
-                        <h5>ADDITIONAL SERVICES</h5>
-                        <p>Type of Services</p>
-                        <div class="gray-block">
-                            <div class="cost-right"># EUR</div>
-                        </div>
-                    </div>
-                    <div class="bookin-transparent-block">
-                        <h5>PROMOTION CODE</h5>
-                        <div class="gray-block">
-                            
-                            <div class="media">
-                                <div class="media-left media-middle">
-                                    <img class="media-object" src="img/bitmap.png" alt="Our Students say">
+                    <div class="bookin-white-block">
+                        <div class="bookin-white-block-in">
+                            <div class="bookin-transparent-block">
+                                <h5>COURSE <span class="right"><a href="">Save as PDF <i class="fa fa-file-pdf-o"></i></a></span></h5>
+                                <p>1x Intensive Course</p>
+                                <p>Start day: <span class="right"><data><i class="fa fa-calendar-o"></i>12.10.2015</data></span></p>
+                                <p>Last day: <span class="right"><data><i class="fa fa-calendar-o"></i>18.10.2015</data></span></p>
+                                <p class="title-o">1x Semi-Intensive Course</p>
+                                <p>Start day: <span class="right"><data><i class="fa fa-calendar-o"></i>12.10.2015</data></span></p>
+                                <p>Last day: <span class="right"><data><i class="fa fa-calendar-o"></i>18.10.2015</data></span></p>
+                                <div class="gray-block">
+                                    <div class="cost-right">360 EUR</div>
                                 </div>
-                                <div class="media-body">
-                                    <p class="light media-heading">ALL YEAR</p>
-                                    <h3>Let’s be amigos</h3>
-                                    <p>Sign up for Let’s be amigos and get discounts on any course for you and your friends.</p>
-                                    <h4>- 5% Discount</h4>
+                            </div>
+                            <div class="bookin-transparent-block">
+                                <h5>ACCOMODATION</h5>
+                                <p>Type of Accomodation</p>
+                                <p>Start day: <span class="right"><data><i class="fa fa-calendar-o"></i>#</data></span></p>
+                                <p>Last day: <span class="right"><data><i class="fa fa-calendar-o"></i>#</data></span></p>
+
+                                <div class="gray-block">
+                                    <div class="cost-right"># EUR</div>
+                                </div>
+                            </div>
+                            <div class="bookin-transparent-block">
+                                <h5>ADDITIONAL SERVICES</h5>
+                                <p>Type of Services</p>
+                                <div class="gray-block">
+                                    <div class="cost-right"># EUR</div>
+                                </div>
+                            </div>
+                            <div class="bookin-transparent-block">
+                                <h5>PROMOTION CODE</h5>
+                                <div class="gray-block">
+
+                                    <div class="media">
+                                        <div class="media-left media-middle">
+                                            <img class="media-object" src="img/bitmap.png" alt="Our Students say">
+                                        </div>
+                                        <div class="media-body">
+                                            <p class="light media-heading">ALL YEAR</p>
+                                            <h3>Let’s be amigos</h3>
+                                            <p>Sign up for Let’s be amigos and get discounts on any course for you and your friends.</p>
+                                            <h4>- 5% Discount</h4>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        </div>
-                    </div>
                     </div>
                     
                     <div class="bookin-white-block text-center">
                        <div class="padd">
                         <h3>Total: <strong>784</strong>EUR</h3>
-                        <button type="submit" class="btn btn-default btn-block button red" disabled>Next Step</button>
-                        <button type="submit" class="btn btn-block btn-default big" style="display: none">Clear all data</button></div>
+                        </div>
                     </div>
                 </div>
             </div>

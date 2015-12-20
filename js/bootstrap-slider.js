@@ -494,7 +494,7 @@
 
 				/* Create tooltip elements */
 				var sliderTooltip = document.createElement("div");
-				sliderTooltip.className = "tooltip tooltip-main";
+				sliderTooltip.className = "tooltip tooltip-main in";
 				sliderTooltip.setAttribute('role', 'presentation');
 				createAndAppendTooltipSubElements(sliderTooltip);
 
@@ -981,7 +981,7 @@
 			},
 			_showTooltip: function() {
 				if (this.options.tooltip_split === false ){
-        	this._addClass(this.tooltip, 'in');
+        	//this._addClass(this.tooltip, 'in');
         	this.tooltip_min.style.display = 'none';
         	this.tooltip_max.style.display = 'none';
 		    } else {
@@ -993,7 +993,7 @@
 			},
 			_hideTooltip: function() {
 				if (this._state.inDrag === false && this.alwaysShowTooltip !== true) {
-					this._removeClass(this.tooltip, 'in');
+					//this._removeClass(this.tooltip, 'in');
 					this._removeClass(this.tooltip_min, 'in');
 					this._removeClass(this.tooltip_max, 'in');
 				}

@@ -1,23 +1,95 @@
 <!--<link rel="stylesheet" href="/css/bootstrap.min.css">-->
 <link rel="stylesheet" href="css/main.min.css">
 <style>
-    body {
-        background: #ddd;
-    }
-    
-    
+
+body {
+    background: #f8f8f8;
+}
+
+
 #ex1Slider .slider-selection {
-	background: #FF5A5F;
+    background: #FF5A5F;
 }
 </style>
-<h1>Spanish courses in Barcelona</h1>
-<p class="slogan">Clases con profesores cualificados</p>
-<h2>Spanish language courses</h2>
-<h3>Lorem ipsum dolor sit.</h3>
-<h4>Lorem ipsum dolor.</h4>
-<h5>Lorem ipsum.</h5>
-<a href="" class="button red">Book now</a>
-<a href="" class="button white">View all Courses</a>
+<div class="container">
+<p><a href="clear-page.html">Clear page</a></p>
+<h3>Typography:</h3>
+<blockquote>
+<div class="panel panel-info">
+    <div class="panel-heading"><p><code>&lt;H*&gt;</code>:</p></div>
+    <div class="panel-body">
+        <h1>H1</h1>
+        <p class="slogan">p.slogan</p>
+        <h2>H2</h2>
+        <h3>H3</h3>
+        <h4>H4</h4>
+        <h5>H5</h5>
+    </div>
+</div>
+
+</blockquote>
+<h3>Button:</h3>
+<blockquote>
+<br>
+<div class="panel panel-info">
+    <div class="panel-heading"><p>Width <code>&lt;a&gt;</code>:</p></div>
+    <div class="panel-body">
+        <p>Example <code>&lt;a href="" class="btn btn-default"&gt;btn-default&lt;/a&gt;</code></p>
+        <br>
+        <a href="" class="btn btn-default">Button</a>
+        <a href="" class="btn btn-default-red">Button</a>
+        <a href="" class="btn btn-primary">Primary</a>
+        <a href="" class="btn btn-gray">gray</a>
+        <a href="" class="btn btn-dark-gray">dark-gray</a>
+        <a href="" class="btn btn-success">Success</a>
+        <a href="" class="btn btn-info">Info</a>
+        <a href="" class="btn btn-warning">Warning</a>
+        <a href="" class="btn btn-danger">Danger</a>
+        <a href="" class="btn btn-danger-white">Danger</a>
+        <a href="" class="btn btn-link">Link</a>
+    </div>
+</div>
+<div class="panel panel-info">
+    <div class="panel-heading"><p>With <code>&lt;button&gt;</code>:</p></div>
+    <div class="panel-body">
+        <p>Example <code>&lt;button type="button" class="btn btn-default"&gt;btn-default&lt;/button&gt;</code></p>
+        <br>
+        <button type="button" class="btn btn-default">default</button>
+        <button type="button" class="btn btn-default-red">default-red</button>
+        <button type="button" class="btn btn-primary">primary</button>
+        <button type="button" class="btn btn-gray">gray</button>
+        <button type="button" class="btn btn-dark-gray">gray</button>
+        <button type="button" class="btn btn-success">success</button>
+        <button type="button" class="btn btn-info">info</button>
+        <button type="button" class="btn btn-warning">warning</button>
+        <button type="button" class="btn btn-danger">danger</button>
+        <button type="button" class="btn btn-danger-white">danger-white</button>
+        <button type="button" class="btn btn-link">link</button>
+    </div>
+</div>
+<div class="panel panel-info">
+    <div class="panel-heading"><p>Button with class <code>btn-block</code>:</p></div>
+    <div class="panel-body">
+        <button type="button" class="btn btn-primary btn-block">btn-block</button>
+    </div>
+</div>
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <p>Button with class <code>btn-long</code>:</p>
+    </div>
+
+   <div class="panel-body">
+        <button type="button" class="btn btn-primary btn-long">btn-long</button>
+    </div>
+</div>
+<div class="panel panel-info">
+    <div class="panel-heading"><p>Button with class <code>btn-press</code>:</p></div>
+    <div class="panel-body">
+        <button type="button" class="btn btn-press btn-primary">btn-press</button>
+    </div>
+</div>
+</blockquote>
+<!--
 <nav class="navbar navbar-theme" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -32,7 +104,6 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Ссылка</a></li>
             <li><a href="#">Ссылка</a></li>
-<!--            Dropdown menu-->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
@@ -41,8 +112,6 @@
                 <li><a href="#">Что-то еще</a></li>
               </ul>
             </li>
-            
-<!--            Dropdown menu - end -->
           </ul>
         </div>
     </div>
@@ -60,24 +129,40 @@
     </ul>
     </li>
 </ul>
+-->
+<div class="panel panel-info">
+    <div class="panel-heading">
+        <p>Slider:</p>
+    </div>
+
+   <div class="panel-body">
+       <p>Example: <code>&lt;input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="874" data-slider-step="1" data-slider-value="250"/&gt;</code></p>
+        <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="874" data-slider-step="1" data-slider-value="250"/>
+    </div>
+</div>
 <a href="" class="help-chat">
    <div class="bocadilo">Any question? Ask us!</div>
     <div class="chat-icon"></div>
 </a>
-<input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="874" data-slider-step="1" data-slider-value="250"/>
 
+</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script type='text/javascript' src="js/bootstrap-slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+    <script type='text/javascript' src="js/bootstrap-slider.js">
+</script>
     <script type='text/javascript'>
-        var currency = '€';
-    	$(document).ready(function() {
-    		/* Example 1 */
-	    	$('#ex1').slider({
-	          	formatter: function(value) {
-	            	return value + ' ' + currency;
-	          	}
-	        });
-		});
-    </script>
-<script src="/js/bootstrap.min.js"></script>
+
+var currency = '€';
+$(document).ready(function() {
+    /* Example 1 */
+    $('#ex1').slider({
+        formatter: function(value) {
+            return value + ' ' + currency;
+        }
+    });
+});
+</script>
+<script src="/js/bootstrap.min.js">
+</script><script src="/prepros.js">
+</script>

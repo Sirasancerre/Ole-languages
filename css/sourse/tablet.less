@@ -105,6 +105,32 @@
 }
 @media all and (max-width: 767px) { // Tablets < 768px
 
+    .left-to-center {
+        .media-left {
+            left: 0;
+            right: 0;
+            margin: auto auto 20px!important;
+            display: block;
+            float: none;
+        }
+        .media-body {
+            text-align: center;
+        }
+    }
+    .menu {
+        .media {
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+            margin-bottom: 50px;
+        }
+        .button {
+            text-align: center;
+            position: relative;
+            margin: 0!important;
+        }
+    }
 }
 @media all and (max-width: 854px) {
     .second-nav > li > .no-tablet {
@@ -147,17 +173,5 @@
     }
     .scroll {
         top: 65px!important;
-    }
-    .left-to-center {
-        .media-left {
-            left: 0;
-            right: 0;
-            margin: auto auto 20px!important;
-            display: block;
-            float: none;
-        }
-        .media-body {
-            text-align: center;
-        }
     }
 }

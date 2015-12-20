@@ -523,30 +523,7 @@
     .sc .content {background-image: url(../img/host-family.png)}
     .th .content {background-image: url(../img/residenca.png)}   
 }
-.round-top:before {
-    content: " ";
-    width: 44px;
-    height: 44px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 22px;
-    position: absolute;
-    background: #F5F5F5;
-    top: -26px;
-}
-.round-bottom:after {
-    content: " ";
-    width: 44px;
-    height: 44px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    border-radius: 22px;
-    position: absolute;
-    background: #F96B6F;
-    bottom: -18px;
-}
+
 .steps {
     background: #F96B6F;
     position: relative;
@@ -724,5 +701,29 @@
     }
     .icon-bar {
         background: #696C6F;
+    }
+}
+
+#faq-title {
+    max-width: 944px + 100px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 50px;
+    .button {
+        margin-right: 50px;
+    }
+    .mass-icon h2 {
+        margin: 0;
+        font-size: 50px;
+        text-align: center;
+    }
+}
+@media all and (max-width: 880px) {
+    #faq-title {
+        .media {
+            width: 320px;
+        }
     }
 }

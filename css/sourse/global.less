@@ -61,6 +61,7 @@ h5 {
     color: #fff;
     line-height: 24px;
 }
+/*
 .button {
     padding-top: 10px;
     left: 0;
@@ -105,8 +106,74 @@ h5 {
         text-decoration: none;
     }
 }
+*/
+// ================= Round ====================
+.round-top:before {
+    content: " ";
+    width: 44px;
+    height: 44px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 22px;
+    position: absolute;
+    background: #F5F5F5;
+    top: -26px;
+}
+.round-bottom:after {
+    content: " ";
+    width: 44px;
+    height: 44px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 22px;
+    position: absolute;
+    background: #F96B6F;
+    bottom: -18px;
+}
+
 .padding-left-null {padding-left: 0}
 .padding-right-null {padding-right: 0}
+// ================= Message ====================
+.message {
+    z-index: 1;
+    position: relative;
+    padding: 50px;
+    h2 {
+        line-height: 30px!important;
+        margin: 0;
+    }
+    &.success {
+        background: #CBF0E0;
+        &:after {
+            background: #CBF0E0;
+        }
+        h2 {
+            color: #61C697;
+        }
+    }
+    &.expect {
+        background: #FFF9DE;
+        &:after {
+            background: #FFF9DE;
+        }
+        h2 {
+            color: #B5871A;
+        }
+        p.errores {
+            font-size: 14px;
+            color: #B5871A;
+        }
+    }
+}
+.media-center {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 15px;
+}
 // ================= Navbar ====================
 
 .first {
@@ -318,4 +385,140 @@ h5 {
 }
 .form-white {
     color: #999;
+}
+// ================== Button ===================
+.btn {
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 2px;
+    border: none;
+    padding: 12px;
+    &:focus {
+        outline: none;
+    }
+    &:active {
+        outline: none;
+    }
+    &:active:focus {
+        outline: none;
+    }
+}
+.btn-default {
+    border: 1px solid #D8D8D8;
+    color: #696C6F;
+    &:hover {
+        border-color: #aaa;
+        background-color: white;
+    }
+}
+.btn-default-red {
+    border: 1px solid #ff5a5f;
+    color: #ff5a5f;
+    background-color: white;
+    &:hover {
+        color: #cc494d;
+        border-color: #cc494d;
+        background-color: white;
+    }
+}
+.btn-long {
+    padding: 12px 45px;
+}
+.btn-block {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-sm {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: 400;
+    font-size: 16px;
+}
+.btn-danger, .btn-danger-white, .btn-warning, .btn-info, .btn-success, .btn-primary, .btn-gray, .btn-dark-gray {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    &:active {
+        border-bottom-width: 0;
+        transform: translateY(2px);
+        margin-bottom: 2px;
+    }
+}
+.btn-color (@color) {
+    background-color: @color;
+    border-bottom-color: @color - 50;
+    &:hover {
+        background-color: @color + 40;
+        border-color: @color - 50;
+    }
+    &:active {
+        background-color: @color + 40;
+    }
+    &:focus:active {
+        background-color: @color + 40;
+    }
+}
+.btn-primary {.btn-color (#4A90E2)}
+.btn-success {.btn-color (#5cb85c)}
+.btn-info {.btn-color (#5bc0de)}
+.btn-warning {.btn-color (#f0ad4e)}
+.btn-danger {.btn-color (#ff5a5f)}
+.btn-gray {
+    .btn-color (#F1F1F1);
+    color: #696C6F;
+    &:hover, &:active, &:focus, &:active:focus {
+        color: #696C6F;
+    }
+}
+.btn-dark-gray {
+    .btn-color (#DADADC);
+    color: #696C6F;
+    &:hover, &:active, &:focus, &:active:focus {
+        color: #696C6F;
+    }
+}
+.btn-danger-white {
+    color: #FF5A5F;
+    background-color: #fff;
+    border-bottom-color: #E30010;
+    &:hover {
+        background-color: #eee;
+        border-color: #E30000;
+        color: #FF5A5F
+    }
+    &:active {
+        color: #FF5A5F
+    }
+    &:focus {
+        color: #f05055;
+    }
+}
+.btn-press {
+    border-bottom-width: 0;
+    transform: translateY(2px);
+    margin-bottom: 2px;
+    /*
+    background-color: #DADADC;
+    color: #696C6F;
+    &:active, &:hover, &:focus, &:active:focus {
+        
+        background-color: #DADADC;
+        color: #696C6F;
+    }
+    */
+}
+//=============== ======
+.menu {
+    position: relative;
+    div:first-child {
+        //float: left;
+    }
+    .button {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        .btn:nth-child(2) {
+            //margin-left: -4px;
+        }
+    }
 }
