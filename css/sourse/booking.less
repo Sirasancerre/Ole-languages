@@ -13,7 +13,7 @@
     .gray-block
 */
 
-.bookin-white-block a {
+.Booking-white-block a {
     color: #FF5A5F;
     &:hover {
         color: #ff333a;
@@ -86,7 +86,7 @@
         box-shadow: 0 0 4px rgba(74,144,226,.5);
     }
 }
-.bookin-white-block {
+.Booking-white-block {
     color: #696C6F;
     background: #fff;
     border: 1px solid #E1E5E5;
@@ -99,7 +99,7 @@
     border-bottom: 1px solid #E1E5E5;
 }
 */
-.bookin-white-block-in {
+.Booking-white-block-in {
     padding: 20px;
 }
 // ================= BLUE
@@ -115,13 +115,13 @@
         .btn {display: inline-block;}
     }
 // === === === == == == == = = = 
-.bookin-title {
+.Booking-title {
     font-weight: 700;
     font-size: 18px;
     color: #696C6F;
     margin-bottom: -15px;
 }
-.bookin-block-bottom {
+.Booking-block-bottom {
     color: #696C6F;
     font-weight: 700;
     background: #EEEEEE;
@@ -225,6 +225,8 @@
         margin-bottom: 4px;
         input {
             margin-top: 6px;
+            position: absolute;
+            margin-left: -20px;
         }
     }
 }
@@ -251,17 +253,19 @@
         float: right;
         text-align: right;
     }
-    button {display: none}
+    .btn {display: none}
     .red {
         color: #FF5A5F;
     }
     &.active {
         border: 2px solid #DBB755;
-        .notif, .need {display: block}
-    input, select {
-        border: 2px solid #DBB755
+        .notif, .need {
+            display: block
+        }
+        input, select {
+            border: 2px solid #DBB755
+        }
     }
-    }    
 }
 .block-3{
     position: relative;
@@ -302,7 +306,7 @@
         .need {display: block}
     }    
 }
-.bookin-transparent-block {
+.Booking-transparent-block {
     border-bottom: 2px solid #DEDEDF;
     h4 {
         font-size: 18px;

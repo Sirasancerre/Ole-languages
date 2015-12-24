@@ -60,13 +60,13 @@ menu ul li.active a {
   margin: 30px auto;
 }
 .steps2 .round .step-1 {
-  background-image: url(../img/smile.png);
+  background-image: url('../img/smile.png');
 }
 .steps2 .round .step-2 {
-  background-image: url(../img/icon_Check_white.png);
+  background-image: url('../img/icon_Check_white.png');
 }
 .steps2 .round .step-3 {
-  background-image: url(../img/icon_certificated.png);
+  background-image: url('../img/icon_certificated.png');
 }
 @media all and (max-width: 991px) {
   menu {

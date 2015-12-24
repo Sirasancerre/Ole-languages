@@ -1,3 +1,6 @@
+wet {
+  background: url('../img/');
+}
 .row {
   position: relative;
   padding: 50px 0;
@@ -89,7 +92,7 @@
 .contacts-4 {
   padding: 55px 20px;
   min-width: 0px;
-  background-image: url(../img/evening_cours.png);
+  background-image: url('../img/evening_cours.png');
 }
 .contacts-4 p {
   color: #fff;
@@ -107,7 +110,7 @@
   right: 0;
   bottom: 0;
   height: 18px;
-  background: url(../img/designer.svg) center;
+  background: url('../img/designer.svg') center;
 }
 .contacts-4:before {
   background: #FF7277;
@@ -117,4 +120,17 @@
 }
 .phone-cons .testimonials .mass-icon {
   border-color: #fff;
+}
+#map {
+  height: 331px;
+  /*
+    &:hover {
+        z-index: 11;
+    }
+*/
+}
+@media all and (min-width: 992px) {
+  .gmnoprint {
+    margin-bottom: 50px;
+  }
 }

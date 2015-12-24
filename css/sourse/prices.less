@@ -1,4 +1,7 @@
 @tab: #EBE9E9;
+@absolute-url: "../";
+
+
 
 .table-striped > tbody > tr {
     &:nth-of-type(odd) {background-color: #fff}
@@ -26,6 +29,10 @@ table{
                 border-left: 1px solid @tab;
                 border-bottom: 1px solid @tab;
             }
+        > td {
+            padding: 15px 8px!important;
+            width: 50%;
+        }
         
     }
     &.week {
@@ -116,7 +123,7 @@ table{
     right: 0;
     bottom: 0;
     height: 18px;
-    background: url(../img/designer.svg) center;
+    background: url('@{absolute-url}img/designer.svg') center;
 }
 .addit {
     
@@ -189,7 +196,7 @@ table{
 #special-offer {
     position: relative;
     min-height: 331px;
-    background: url(../img/special-offer.png) no-repeat center;
+    background: url('@{absolute-url}img/special-offer.png') no-repeat center;
     background-size: cover;
     padding-top: 40px;
     padding-bottom: 40px;

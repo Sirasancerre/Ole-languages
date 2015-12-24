@@ -14,9 +14,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
 }
-#map {
-    height: 331px;
-}
+
 .container {
     background: #fff;
     margin-top: 120px;
@@ -28,7 +26,7 @@
     background: #F5F5F5;
 }
 .first {
-    background-image: url(../img/0d553e61_original.png);
+    background-image: url('@{absolute-url}img/0d553e61_original.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -55,7 +53,7 @@
         width: 85px;
         height: 85px;
         border: 3px solid #fff;
-        background: url(../img/play.svg) no-repeat center;
+        background: url('@{absolute-url}img/play.svg') no-repeat center;
         border-radius: 50%;
         left: 0;
         right: 0;
@@ -91,7 +89,7 @@
             text-align: left;
             color: #696C6F;
             .full-desc-block {
-                width: 456px;
+                width: 556px;
                 left: 0;
                 right: 0;
                 margin: 150px auto;
@@ -261,7 +259,7 @@
     .fr {
         @fr-color: #7E99C9;
         @fr-color-2: #B1BBD8;
-        @fr-img: url(../img/Intensive-spanish-course.png);
+        @fr-img: url('@{absolute-url}img/Intensive-spanish-course.png');
         &.active, .content:hover {
             .gghnh .cost:after {border-right-color: @fr-color;}
             .cost, .calendar .spDay0 {
@@ -293,7 +291,7 @@
     .sc {
         @fr-color: #36D7B7;
         @fr-color-2: #A4E9DB;
-        @fr-img: url(../img/semi-intensive-course.png);
+        @fr-img: url('@{absolute-url}img/semi-intensive-course.png');
         &.active, .content:hover {
             .gghnh .cost:after {border-right-color: @fr-color;}
             .cost, .calendar .spDay0 {
@@ -325,7 +323,7 @@
     .th {
         @fr-color: #F5A623;
         @fr-color-2: #FFD48E;
-        @fr-img: url(../img/evening-spanish-course.png);
+        @fr-img: url('@{absolute-url}img/evening-spanish-course.png');
         &.active, .content:hover {
             .gghnh .cost:after {border-right-color: @fr-color;}
             .cost, .calendar .spDay0 {
@@ -357,7 +355,7 @@
     .fo {
         @fr-color: #A991C7;
         @fr-color-2: #D4C1EB;
-        @fr-img: url(../img/dele-preparation-course.png);
+        @fr-img: url('@{absolute-url}img/dele-preparation-course.png');
         &.active, .content:hover {
             .gghnh .cost:after {border-right-color: @fr-color;}
             .cost, .calendar .spDay0 {
@@ -390,7 +388,7 @@
     .fi {
         @fr-color: #F8E71C;
         @fr-color-2: #F1E87D;
-        @fr-img: url(../img/evening_cours.png);
+        @fr-img: url('@{absolute-url}img/evening_cours.png');
         &.active, .content:hover {
             .gghnh .cost:after {border-right-color: @fr-color;}
             .cost, .calendar .spDay0 {
@@ -422,7 +420,7 @@
     .sx {
         @fr-color: #DB0A5B;
         @fr-color-2: #FFC2DA;
-        @fr-img: url(../img/20.png);
+        @fr-img: url('@{absolute-url}img/20.png');
         &.active, .content:hover {
             .gghnh .cost:after {border-right-color: @fr-color;}
             .cost, .calendar .spDay0 {
@@ -470,7 +468,7 @@
         &:after {
             transition: all .3s;
             content: " ";
-            /* background: url(../img/Rectangle.svg); */
+            /* background: url('@{absolute-url}img/Rectangle.svg'); */
             border: 21px solid transparent;
             border-left: 21px solid #4a4a4a;
             /* width: 23px; */
@@ -519,9 +517,9 @@
             }
         }
     }
-    .fr .content {background-image: url(../img/student.png)}
-    .sc .content {background-image: url(../img/host-family.png)}
-    .th .content {background-image: url(../img/residenca.png)}   
+    .fr .content {background-image: url('@{absolute-url}img/student.png')}
+    .sc .content {background-image: url('@{absolute-url}img/host-family.png')}
+    .th .content {background-image: url('@{absolute-url}img/residenca.png')}   
 }
 
 .steps {
@@ -560,15 +558,15 @@
             }
         }
         .step-1 {
-            background-image: url(../img/step-1.png);
+            background-image: url('@{absolute-url}img/step-1.png');
             &:before {content: "1";}
         }
         .step-2 {
-            background-image: url(../img/step-2.png);
+            background-image: url('@{absolute-url}img/step-2.png');
             &:before {content: "2";}
         }
         .step-3 {
-            background-image: url(../img/step-3.png);
+            background-image: url('@{absolute-url}img/step-3.png');
             &:before {content: "3";}
         }
     }

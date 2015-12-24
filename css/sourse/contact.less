@@ -1,3 +1,8 @@
+@absolute-url: "../";
+
+wet {
+    background: url('@{absolute-url}img/');
+}
 .row {
     position: relative;
     padding: 50px 0;
@@ -90,7 +95,7 @@
 .contacts-4 {
     padding: 55px 20px;
     min-width: 0px;
-    background-image: url(../img/evening_cours.png);
+    background-image: url('@{absolute-url}img/evening_cours.png');
     p {
         color: #fff;
         font-size: 25px;
@@ -107,7 +112,7 @@
         right: 0;
         bottom: 0;
         height: 18px;
-        background: url(../img/designer.svg) center;
+        background: url('@{absolute-url}img/designer.svg') center;
     }
     &:before {
         background: #FF7277;
@@ -119,5 +124,19 @@
     }
     .testimonials .mass-icon {
         border-color: #fff;
+    }
+}
+#map {
+    height: 331px;
+/*
+    &:hover {
+        z-index: 11;
+    }
+*/
+}
+
+@media all and (min-width: 992px) {
+    .gmnoprint {
+        margin-bottom: 50px;
     }
 }

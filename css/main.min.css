@@ -6109,14 +6109,14 @@ button.close {
 }
 @font-face {
   font-family: Kavoon-regular;
-  src: local("Kavoon"), url(/fonts/Kavoon-Regular.ttf);
+  src: local("Kavoon"), url('..//fonts/Kavoon-Regular.ttf');
 }
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 25px;
-  background-image: url(../img/park-guell_dif.png);
+  background-image: url('../img/park-guell_dif.png');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -6408,7 +6408,7 @@ h5 {
   top: 12px;
 }
 .chat-icon {
-  background: url(../img/bocadillo.png) #ff5a5f no-repeat center;
+  background: url('../img/bocadillo.png') #ff5a5f no-repeat center;
   border: 1px solid #000000;
   width: 50px;
   height: 50px;
@@ -6727,9 +6727,6 @@ h5 {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-#map {
-  height: 331px;
-}
 .container {
   background: #fff;
   margin-top: 120px;
@@ -6741,7 +6738,7 @@ h5 {
   background: #F5F5F5;
 }
 .first {
-  background-image: url(../img/0d553e61_original.png);
+  background-image: url('../img/0d553e61_original.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -6770,7 +6767,7 @@ h5 {
   width: 85px;
   height: 85px;
   border: 3px solid #fff;
-  background: url(../img/play.svg) no-repeat center;
+  background: url('../img/play.svg') no-repeat center;
   border-radius: 50%;
   left: 0;
   right: 0;
@@ -6800,7 +6797,7 @@ h5 {
   color: #696C6F;
 }
 .courses .active .full-desc .full-desc-block {
-  width: 456px;
+  width: 556px;
   left: 0;
   right: 0;
   margin: 150px auto;
@@ -7089,7 +7086,7 @@ h5 {
   border-left-color: #7e99c9;
 }
 .courses .fr .content {
-  background-image: url(../img/Intensive-spanish-course.png);
+  background-image: url('../img/Intensive-spanish-course.png');
   border-bottom-color: #7e99c9;
 }
 .courses .fr .calendar .day-weekend {
@@ -7125,7 +7122,7 @@ h5 {
   border-left-color: #36d7b7;
 }
 .courses .sc .content {
-  background-image: url(../img/semi-intensive-course.png);
+  background-image: url('../img/semi-intensive-course.png');
   border-bottom-color: #36d7b7;
 }
 .courses .sc .calendar .day-weekend {
@@ -7161,7 +7158,7 @@ h5 {
   border-left-color: #f5a623;
 }
 .courses .th .content {
-  background-image: url(../img/evening-spanish-course.png);
+  background-image: url('../img/evening-spanish-course.png');
   border-bottom-color: #f5a623;
 }
 .courses .th .calendar .day-weekend {
@@ -7197,7 +7194,7 @@ h5 {
   border-left-color: #a991c7;
 }
 .courses .fo .content {
-  background-image: url(../img/dele-preparation-course.png);
+  background-image: url('../img/dele-preparation-course.png');
   border-bottom-color: #a991c7;
 }
 .courses .fo .calendar .day-weekend {
@@ -7233,7 +7230,7 @@ h5 {
   border-left-color: #f8e71c;
 }
 .courses .fi .content {
-  background-image: url(../img/evening_cours.png);
+  background-image: url('../img/evening_cours.png');
   border-bottom-color: #f8e71c;
 }
 .courses .fi .calendar .day-weekend {
@@ -7269,7 +7266,7 @@ h5 {
   border-left-color: #db0a5b;
 }
 .courses .sx .content {
-  background-image: url(../img/20.png);
+  background-image: url('../img/20.png');
   border-bottom-color: #db0a5b;
 }
 .courses .sx .calendar .day-weekend {
@@ -7309,7 +7306,7 @@ h5 {
   -webkit-transition: all .3s;
           transition: all .3s;
   content: " ";
-  /* background: url(../img/Rectangle.svg); */
+  /* background: url('@{absolute-url}img/Rectangle.svg'); */
   border: 21px solid transparent;
   border-left: 21px solid #4a4a4a;
   /* width: 23px; */
@@ -7366,13 +7363,13 @@ h5 {
   line-height: 34px;
 }
 .accomodations .fr .content {
-  background-image: url(../img/student.png);
+  background-image: url('../img/student.png');
 }
 .accomodations .sc .content {
-  background-image: url(../img/host-family.png);
+  background-image: url('../img/host-family.png');
 }
 .accomodations .th .content {
-  background-image: url(../img/residenca.png);
+  background-image: url('../img/residenca.png');
 }
 .steps {
   background: #F96B6F;
@@ -7418,19 +7415,19 @@ h5 {
   font-size: 22px;
 }
 .steps .round .step-1 {
-  background-image: url(../img/step-1.png);
+  background-image: url('../img/step-1.png');
 }
 .steps .round .step-1:before {
   content: "1";
 }
 .steps .round .step-2 {
-  background-image: url(../img/step-2.png);
+  background-image: url('../img/step-2.png');
 }
 .steps .round .step-2:before {
   content: "2";
 }
 .steps .round .step-3 {
-  background-image: url(../img/step-3.png);
+  background-image: url('../img/step-3.png');
 }
 .steps .round .step-3:before {
   content: "3";
@@ -7714,6 +7711,15 @@ h5 {
     text-align: center;
     position: relative;
     margin: 0!important;
+  }
+  .menu .btn {
+    padding: 7px;
+  }
+  .panel-group {
+    padding: 30px 15px 40px!important;
+  }
+  #faq-title {
+    padding: 0;
   }
 }
 @media all and (max-width: 854px) {
@@ -8042,6 +8048,15 @@ header .second-nav {
   color: #696C6F;
   position: relative;
   padding: 60px 0  30px;
+}
+#menu-btn-2 {
+  border-radius: 0;
+  margin-left: -3px;
+}
+#menu-btn-3 {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  margin-left: -3px;
 }
 .our-activ {
   border-bottom: 1px solid #E1E5E5;
