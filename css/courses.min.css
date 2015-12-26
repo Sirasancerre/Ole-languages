@@ -68,6 +68,136 @@ menu ul li.active a {
 .steps2 .round .step-3 {
   background-image: url('../img/icon_certificated.png');
 }
+.courses .active .full-desc {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background: rgba(74, 74, 74, 0.76);
+  text-align: left;
+  color: #696C6F;
+}
+.courses .active .full-desc .full-desc-block {
+  width: 556px;
+  left: 0;
+  right: 0;
+  margin: 150px auto;
+  background: #fff;
+  box-shadow: 5px 5px 20px rgba(72, 74, 79, 0.5);
+  position: relative;
+}
+.courses .active .full-desc .content {
+  margin: 0;
+  border-bottom-width: 6px;
+  border-bottom-style: solid;
+}
+.courses .active .full-desc h5,
+.courses .active .full-desc p {
+  color: #696C6F;
+}
+.courses .active .full-desc p {
+  margin-bottom: 30px;
+}
+.courses .active .full-desc a {
+  color: #FF5A5F;
+  cursor: pointer;
+}
+.courses .active .full-desc .light {
+  opacity: .36;
+}
+.courses .active .full-desc img.i1 {
+  width: 28px;
+  margin-right: 4px;
+}
+.courses .active .full-desc img.i2 {
+  width: 21px;
+  margin-right: 10px;
+}
+.courses .active .full-desc img.i3 {
+  width: 26px;
+  margin-right: 7px;
+}
+.courses .active .full-desc img.i4 {
+  width: 25px;
+  margin-right: 6px;
+}
+.courses .active .full-desc .cal {
+  border-radius: 2px;
+  padding: 30px 0;
+  margin-top: 0;
+  margin-bottom: 15px;
+  background: #EEEEEF;
+}
+.courses .active .full-desc .cal .calendar {
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.courses .active .full-desc .gghnh {
+  margin: 20px 0;
+  position: relative;
+  background: #EEEEEF;
+  border-radius: 2px;
+  padding: 40px 20px;
+}
+.courses .active .full-desc .gghnh h5 {
+  margin-top: 0;
+  font-size: 15px;
+}
+.courses .active .full-desc .gghnh .dropdown-toggle {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.courses .active .full-desc .gghnh .btn-default {
+  border-color: #CFCFD5;
+  color: #BCBBBB;
+  font-size: 15px;
+  line-height: 26px;
+}
+.courses .active .full-desc .gghnh .cost {
+  padding: 8px 25px;
+  right: 0;
+  top: 72px;
+}
+.courses .active .full-desc .gghnh .cost:after {
+  right: auto;
+  left: -31px;
+  border-left: 21px solid transparent;
+  border-right-width: 21px;
+  border-right-style: solid;
+}
+.courses .active .full-desc .pish {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+.courses .active .full-desc svg {
+  width: 100%;
+  margin-top: 30px;
+}
+.courses .active .full-desc .b-close {
+  position: absolute;
+  top: 0;
+  right: -25px;
+  color: white;
+  font-size: 20px;
+  margin-top: -5px;
+}
+.courses .active div.day0 div,
+.courses .active div.day1 div,
+.courses .active div.weekend div {
+  width: 21px;
+  height: 21px;
+  display: block;
+  float: left;
+  margin-right: 7px;
+}
+.courses .active div.day1 div {
+  border: 2px solid #F3474F;
+  border-radius: 50%;
+}
+.courses .full-desc {
+  display: none;
+}
 @media all and (max-width: 991px) {
   menu {
     display: none;

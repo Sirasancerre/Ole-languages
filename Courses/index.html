@@ -55,9 +55,9 @@
                         </li>
 
                         <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <b class="caret"></b></a>
+                          <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Courses <b class="caret"></b></a>
                           <ul class="dropdown-menu">
-                            <li><a href="Courses/">Course Options</a></li>
+                            <li class="active"><a href="Courses/">Course Options</a></li>
                             <li><a href="Courses#2">Methodology and levels</a></li>
                             <li><a href="Courses#3">How to enroll</a></li>
                           </ul>
@@ -187,8 +187,8 @@
                         </div>
                 </div>
                 <div class="row text-center">
-                    <div class="col-sm-6 cosede fr"> <!-- clas="active" -->
-                        <a href="javascript:void(0)" class="content">
+                    <div class="col-sm-6 cosede fr" id="fr"> <!-- clas="active" -->
+                        <a href="javascript:void(0)" class="content desc-course-btn" name="fr">
                             <div class="blackout"></div>
                             <div class="inline-h">
                                 <h3>Intensive Spanish Course</h3>
@@ -312,7 +312,7 @@ For absolute beginner we offer intensive and semi-intensive courses every other 
                                     
                                     <button type="submit" class="btn btn-default btn-block button red">Book Intensive Course</button>
                                     <button type="submit" class="btn btn-default btn-block button white"><img src="img/download.png" alt="download">Download Course</button>
-                                    <svg width="496px" height="65px" viewBox="0 0 496 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                                    <a name="fr" class="desc-course-btn"><svg width="496px" height="65px" viewBox="0 0 496 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
                                         <g id="Courses" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                             <g id="Desktop-HD" transform="translate(-116.000000, -2255.000000)">
                                                 <g id="Intensive" transform="translate(85.000000, 126.000000)">
@@ -327,14 +327,17 @@ For absolute beginner we offer intensive and semi-intensive courses every other 
                                                 </g>
                                             </g>
                                         </g>
-                                    </svg>
+                                    </svg></a>
                                 </div>
+                                <a class="desc-course-btn b-close" name="fr">
+                                    <i class="fa fa-times"></i>
+                                </a>
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 cosede sc">
-                        <a href="javascript:void(0)" class="content">
+                    <div class="col-sm-6 cosede sc" id="sc">
+                        <a href="javascript:void(0)" class="content desc-course-btn" name="sc">
                             <div class="blackout"></div>
                             <div class="inline-h">
                                 <h3>Intensive Spanish Course</h3>
@@ -478,12 +481,14 @@ For absolute beginner we offer intensive and semi-intensive courses every other 
                                         </g>
                                     </svg>
                                 </div>
-                                
+                                <a class="desc-course-btn b-close" name="sc">
+                                    <i class="fa fa-times"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 cosede th">
-                        <a href="javascript:void(0)" class="content">
+                    <div class="col-sm-6 cosede th" id="th">
+                        <a href="javascript:void(0)" class="content desc-course-btn" name="th">
                             <div class="blackout"></div>
                             <div class="inline-h">
                                 <h3>Intensive Spanish Course</h3>
@@ -624,12 +629,15 @@ For absolute beginner we offer intensive and semi-intensive courses every other 
                                         </g>
                                     </svg>
                                 </div>
+                                <a class="desc-course-btn b-close" name="th">
+                                    <i class="fa fa-times"></i>
+                                </a>
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 cosede fo">
-                        <a href="javascript:void(0)" class="content">
+                    <div class="col-sm-6 cosede fo" id="fo">
+                        <a href="javascript:void(0)" class="content desc-course-btn" name="fo">
                             <div class="blackout"></div>
                             <div class="inline-h">
                                 <h3>Intensive Spanish Course</h3>
@@ -770,12 +778,15 @@ For absolute beginner we offer intensive and semi-intensive courses every other 
                                         </g>
                                     </svg>
                                 </div>
+                                <a class="desc-course-btn b-close" name="fo">
+                                    <i class="fa fa-times"></i>
+                                </a>
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 cosede fi">
-                        <a href="javascript:void(0)" class="content">
+                    <div class="col-sm-6 cosede fi" id="fi">
+                        <a href="javascript:void(0)" class="content desc-course-btn" name="fi">
                             <div class="blackout"></div>
                             <div class="inline-h">
                                 <h3>Conversation Classes</h3>
@@ -916,12 +927,15 @@ For absolute beginner we offer intensive and semi-intensive courses every other 
                                         </g>
                                     </svg>
                                 </div>
+                                <a class="desc-course-btn b-close" name="fi">
+                                    <i class="fa fa-times"></i>
+                                </a>
                                 
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 cosede sx">
-                        <a href="javascript:void(0)" class="content">
+                    <div class="col-sm-6 cosede sx" id="sx">
+                        <a href="javascript:void(0)" class="content desc-course-btn" name="sx">
                             <div class="blackout"></div>
                             <div class="inline-h">
                                 <h3>Private Lessons</h3>
@@ -1062,6 +1076,9 @@ For absolute beginner we offer intensive and semi-intensive courses every other 
                                         </g>
                                     </svg>
                                 </div>
+                                <a class="desc-course-btn b-close" name="sx">
+                                    <i class="fa fa-times"></i>
+                                </a>
                                 
                             </div>
                         </div>

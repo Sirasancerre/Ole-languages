@@ -72,6 +72,133 @@ menu {
         }
     }
 }
+.courses {
+    .active {
+        .content {
+            //display: none;
+        }
+        .full-desc {
+            display: block;
+            position: fixed;
+            top: 0;
+            z-index: 11;
+            background: rgba(74,74,74,.76);
+            text-align: left;
+            color: #696C6F;
+            .full-desc-block {
+                width: 556px;
+                left: 0;
+                right: 0;
+                margin: 150px auto;
+                background: #fff;
+                box-shadow: 5px 5px 20px rgba(72, 74, 79, .5);
+                position: relative;
+            }
+            .content {
+                margin: 0;
+                border-bottom-width: 6px;
+                border-bottom-style: solid;
+            }
+            h5, p {
+                color: #696C6F;
+            }
+            p {
+                margin-bottom: 30px;
+            }
+            a {
+                color: #FF5A5F;
+                cursor: pointer;
+            }
+            .light {
+                opacity: .36;
+            }
+            img {
+                &.i1 {width: 28px; margin-right: 4px}
+                &.i2 {width: 21px; margin-right: 10px;}
+                &.i3 {width: 26px; margin-right: 7px}
+                &.i4 {width: 25px; margin-right: 6px}
+            }
+            .cal {
+                border-radius: 2px;
+                padding: 30px 0;
+                margin-top: 0;
+                margin-bottom: 15px;
+                background: #EEEEEF;
+                .calendar {
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+            .gghnh {
+                margin: 20px 0;
+                position: relative;
+                background: #EEEEEF;
+                border-radius: 2px;
+                padding: 40px 20px;
+                h5 {
+                    margin-top: 0;
+                    font-size: 15px;
+                }
+                .dropdown-toggle {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+                .btn-default {
+                    border-color: #CFCFD5;
+                    color: #BCBBBB;
+                    font-size: 15px;
+                    line-height: 26px;
+                }
+                .cost {
+                    
+                    padding: 8px 25px;
+                    right: 0;
+                    top: 72px;
+                    &:after {
+                        right: auto;
+                        left: -31px;
+                        border-left: 21px solid transparent;
+                        border-right-width: 21px;
+                        border-right-style: solid;
+                    }
+                }
+                
+            }
+            .pish {
+                margin-left: 18px;
+                margin-right: 18px;
+            }
+            
+            svg {
+                width: 100%;
+                margin-top: 30px;
+            }
+            .b-close {
+                position: absolute;
+                top: 0;
+                right: -25px;
+                color: white;
+                font-size: 20px;
+                margin-top: -5px;
+                
+            }
+        }
+        div.day0 div, div.day1 div, div.weekend div {
+            width: 21px;
+            height: 21px;
+            display: block;
+            float: left;
+            margin-right: 7px;
+        }
+        div.day1 div {
+            border: 2px solid #F3474F;
+            border-radius: 50%;
+        }
+    }
+    .full-desc {display: none}
+    
+}
 @media all and (max-width: 991px) {
     menu {
         display: none;

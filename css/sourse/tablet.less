@@ -66,10 +66,28 @@
     .first {
         padding-bottom: 0;
     }
+    
+    .accomodations {
+        .th {
+            display: none;
+        }
+    }
 }
 @media all and (max-width: 1199px) {
-    .accomodations .th {
-        display: none;
+    .accomodations {
+        .content {
+            height: 266px;
+        }
+    }
+    .courses {
+        .content {
+            height: 287px;
+            .cost-hover ul li {
+                &:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
     }
     .del {
         display: none;

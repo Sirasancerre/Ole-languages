@@ -76,129 +76,96 @@
     }
 }
 .courses {
-    .active {
-        .content {
-            //display: none;
-        }
-        .full-desc {
-            display: block;
-            position: fixed;
-            top: 0;
-            z-index: 11;
-            background: rgba(74,74,74,.76);
-            text-align: left;
-            color: #696C6F;
-            .full-desc-block {
-                width: 556px;
-                left: 0;
-                right: 0;
-                margin: 150px auto;
-                background: #fff;
-                box-shadow: 5px 5px 20px rgba(72, 74, 79, .5);
-            }
-            .content {
-                margin: 0;
-                border-bottom-width: 6px;
-                border-bottom-style: solid;
-            }
-            h5, p {
-                color: #696C6F;
-            }
-            p {
-                margin-bottom: 30px;
-            }
-            a {
-                color: #FF5A5F;
-                cursor: pointer;
-            }
-            .light {
-                opacity: .36;
-            }
-            img {
-                &.i1 {width: 28px; margin-right: 4px}
-                &.i2 {width: 21px; margin-right: 10px;}
-                &.i3 {width: 26px; margin-right: 7px}
-                &.i4 {width: 25px; margin-right: 6px}
-            }
-            .cal {
-                border-radius: 2px;
-                padding: 30px 0;
-                margin-top: 0;
-                margin-bottom: 15px;
-                background: #EEEEEF;
-                .calendar {
-                    left: 0;
-                    right: 0;
-                    margin: auto;
-                }
-            }
-            .gghnh {
-                margin: 20px 0;
-                position: relative;
-                background: #EEEEEF;
-                border-radius: 2px;
-                padding: 40px 20px;
-                h5 {
-                    margin-top: 0;
-                    font-size: 15px;
-                }
-                .dropdown-toggle {
-                    
-                    padding-right: 15px;
-                    padding-left: 15px;
-                }
-                .btn-default {
-                    border-color: #CFCFD5;
-                    color: #BCBBBB;
-                    font-size: 15px;
-                    line-height: 26px;
-                }
-                .cost {
-                    
-                    padding: 8px 25px;
-                    right: 0;
-                    top: 72px;
-                    &:after {
-                        right: auto;
-                        left: -31px;
-                        border-left: 21px solid transparent;
-                        border-right-width: 21px;
-                        border-right-style: solid;
-                    }
-                }
-                
-            }
-            .pish {
-                margin-left: 18px;
-                margin-right: 18px;
-            }
-        }
-        div.day0 div, div.day1 div, div.weekend div {
-            width: 21px;
-            height: 21px;
-            display: block;
-            float: left;
-            margin-right: 7px;
-        }
-        div.day1 div {
-            border: 2px solid #F3474F;
-            border-radius: 50%;
-        }
-    }
-    .full-desc {display: none}
-    .fr,.sc,.th,.fo,.fi,.sx {
-        text-decoration: none!important;
-        padding: 0;
+    .content {
         display: block;
-        .inline-h, h4, h3 {
+        text-decoration: none!important;
+        height: 311px;
+        background-position:  center;
+        background-repeat:  no-repeat;
+        background-size: cover;
+        margin: 15px;
+        position: relative;
+        overflow: hidden;
+        .plus {
+            transition: all .3s;
+            position: relative;
+            width: 62px;
+            height: 62px;
+            border: 2px solid #fff;
+            color: #fff;
+            left: 0;
+            right: 0;
+            margin: auto;
+            font-size: 50px;
+            font-weight: 700;
+            border-radius: 50%;
+            padding-top: 16px;
+        }
+        h3, h4 {
+            background: #fff;
+            display: inline;
+            line-height: 34px;
+        }
+        .inline-h {
+            padding-top: 120px;
+            
+        }
+        h4, h3 {
             position: relative;
             border-radius: 2px;
             padding: 0 10px;
         }
-        svg {
-            width: 100%;
-            margin-top: 30px;
+        .blackout {
+            transition: all .3s;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: #4E535C;
+            opacity: 0;
         }
+        .cost-hover {
+            position: absolute;
+            background: rgba(86, 90, 92, 0.95);
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 262px;
+            color: white;
+            font-weight: 300;
+            padding: 10px 10px 10px 25px;
+            text-align: left;
+            line-height: 22px;
+            transform: translateX(-100%);
+            transition: transform .3s ease-out;
+            ul {
+                list-style-type: square;
+                padding-left: 18px;
+                line-height: 26px;
+                li:last-child {
+                    list-style: none;
+                }
+            }
+            a {
+                position: absolute;
+                text-align: center;
+                color: white;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 50px;
+                background: #0AD18C;
+                font-weight: 600;
+                padding-top: 13px;
+                font-size: 16px;
+            }
+        }
+    }
+    .fr,.sc,.th,.fo,.fi,.sx {
+        text-decoration: none!important;
+        padding: 0;
+        display: block;
         .button {
             font-weight: 600;
             font-size: 16px;
@@ -208,52 +175,10 @@
             color: #FF5A5F;
             margin-top: 10px;
         }
-        .content {
-            display: block;
-            text-decoration: none!important;
-            height: 287px;
-            background-position:  center;
-            background-repeat:  no-repeat;
-            background-size: cover;
-            margin: 15px;
-            position: relative;
-            .plus {
-                transition: all .3s;
-                position: relative;
-                width: 62px;
-                height: 62px;
-                border: 2px solid #fff;
-                color: #fff;
-                left: 0;
-                right: 0;
-                margin: auto;
-                font-size: 50px;
-                font-weight: 700;
-                border-radius: 50%;
-                padding-top: 16px;
-            }
-            h3, h4 {
-                background: #fff;
-                display: inline;
-                line-height: 34px;
-            }
-            .inline-h {
-                padding-top: 100px;
-            }
-            .blackout {
-                transition: all .3s;
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                background: #4E535C;
-                opacity: 0;
-            }
-        }
         &.active, .content:hover {
             .blackout {opacity: .3}
             .plus {color: #7E99C9; background: #fff;}
+            .cost-hover {transform: translateX(0);}
         }
     }
     .fr {
@@ -501,21 +426,23 @@
     }
 }
 .accomodations {
+    .content {
+        height: 333px;
+        background-position:  center;
+        background-repeat:  no-repeat;
+        background-size: cover;
+        margin: 15px;
+        padding-top: 108px;
+        h3 {
+            background: #fff;
+            display: inline;
+            line-height: 34px;
+            padding: 0 10px;
+            border-radius: 2px;
+        }
+    }
     .fr,.sc,.th {
         padding: 0;
-        .content {
-            height: 295px;
-            background-position:  center;
-            background-repeat:  no-repeat;
-            background-size: cover;
-            margin: 15px;
-            padding-top: 122px;
-            h3 {
-                background: #fff;
-                display: inline;
-                line-height: 34px;
-            }
-        }
     }
     .fr .content {background-image: url('@{absolute-url}img/student.png')}
     .sc .content {background-image: url('@{absolute-url}img/host-family.png')}
