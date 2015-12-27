@@ -7,10 +7,25 @@ $(document).ready(function() {
     $('.navbar-toggle').on("click", function() {
         $('.navbar-toggle').toggleClass('navbar-toggle-visible');
         $('.mobile-menu-wrapper').toggleClass('mobile-menu-wrapper--visible');
-})});
+    });
+    $( ".input-disabled" ).on("click", function() {
+        var tag = $(this).get(0).tagName,
+            id = $(this).index(".input-disabled") + 1;
+        if(tag == "SELECT") {
+            if($(this).val()) {
+                $(".input-disabled:eq(" + id + ")").removeAttr("disabled");
+            };
+        }
+        else if(tag == "INPUT") {
+            $(this).keyup(function () {
+                $(".input-disabled:eq(" + id + ")").removeAttr("disabled");
+            });
+        }
+    });
+});
 $(function() {
          $(".desc-course-btn").click(function() {
-             var name = $(this).prop('name');
+             var name = $(this).prop("name");
              /*
              var i = 0;
              console.log(name);
